@@ -1,36 +1,240 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Academia Melody Labs 🎵
 
-## Getting Started
+Plataforma educativa musical completa con autenticación, gestión de cursos, pagos PSE y chatbot inteligente.
 
-First, run the development server:
+## 🚀 Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Autenticación completa** con roles (Admin, Profesor, Estudiante)
+- **Dashboard específico** para cada tipo de usuario
+- **Sistema de cursos** con inscripción y gestión
+- **Pagos PSE** integrados para Colombia
+- **Chatbot inteligente** con FAQ dinámica
+- **Accesibilidad WCAG 2.1 A**
+- **Responsive design** para todos los dispositivos
+- **TypeScript** para type safety completo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📋 Requisitos Previos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Node.js 18+
+- Supabase account
+- Git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔧 Instalación
 
-## Learn More
+1. **Clonar el repositorio**
+   ```bash
+   git clone [url-del-repositorio]
+   cd melody-labs
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Instalar dependencias**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Configurar variables de entorno**
+   ```bash
+   cp .env.example .env.local
+   ```
+   
+   Luego completa las variables en `.env.local`:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=tu-url-de-supabase
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=tu-anon-key
+   SUPABASE_SERVICE_ROLE_KEY=tu-service-role-key
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Configurar base de datos**
+   - Sube el archivo SQL de migración en `supabase/migrations/`
+   - O ejecuta las migraciones desde Supabase Dashboard
 
-## Deploy on Vercel
+5. **Insertar datos de prueba**
+   ```bash
+   npm run seed
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+6. **Iniciar el servidor de desarrollo**
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👥 Usuarios de Prueba
+
+| Rol | Email | Contraseña |
+|-----|-------|------------|
+| Admin | admin@melodylabs.com | Admin123! |
+| Profesor | profesor.guitarra@melodylabs.com | Profesor123! |
+| Estudiante | estudiante1@ejemplo.com | Estudiante123! |
+
+## 🧪 Testing del Sistema
+
+### Flujo Completo de Estudiante
+
+1. **Registro**
+   - Ve a la página de inicio
+   - Haz clic en "Registrarse"
+   - Completa el formulario con datos válidos
+   - Acepta términos y condiciones (Habeas Data)
+   - Verifica que se redirige al dashboard de estudiante
+
+2. **Exploración de Cursos**
+   - Desde el dashboard, haz clic en "Ver todos los cursos"
+   - Explora los cursos disponibles
+   - Usa el buscador para filtrar por instrumento
+   - Haz clic en "Ver detalles" de un curso
+
+3. **Inscripción a Curso**
+   - En la página del curso, haz clic en "Inscribirse"
+   - Revisa el resumen de la inscripción
+   - Selecciona método de pago (PSE)
+   - Completa el formulario de pago
+   - Verifica que el pago se procesa exitosamente
+
+4. **Gestión de Cursos**
+   - Ve a "Mis Cursos" desde el dashboard
+   - Verifica que el curso aparece con estado "Activo"
+   - Haz clic en el curso para ver detalles
+   - Verifica el progreso y próximas clases
+
+### Flujo de Pago PSE
+
+1. **Iniciar Pago**
+   - Durante la inscripción, selecciona PSE como método de pago
+   - Completa el formulario con:
+     - Tipo de persona: Natural
+     - Tipo de documento: CC
+     - Número de documento: 123456789
+     - Nombre: Juan Pérez
+     - Email: juan@ejemplo.com
+     - Banco: BANCOLOMBIA
+
+2. **Simulación de Pago**
+   - El sistema simula un pago exitoso (90% probabilidad)
+   - Si falla, puedes reintentar
+   - Verifica que se actualiza el estado del pago
+
+### Chatbot FAQ
+
+1. **Activar Chatbot**
+   - Haz clic en el ícono de chat flotante
+   - El chatbot te saludará automáticamente
+
+2. **Hacer Preguntas**
+   - Prueba preguntas como:
+     - "¿Cuáles son los precios?"
+     - "¿Necesito traer mi propio instrumento?"
+     - "¿Qué métodos de pago aceptan?"
+     - "¿Puedo tomar una clase de prueba?"
+
+3. **Contexto Inteligente**
+   - El chatbot recuerda el contexto de la conversación
+   - Puedes hacer preguntas de seguimiento
+   - El chatbot busca en la base de datos de FAQs
+
+### Dashboard de Profesor
+
+1. **Login como Profesor**
+   - Usa: profesor.guitarra@melodylabs.com / Profesor123!
+   - Verifica que ves el dashboard de profesor
+
+2. **Gestión de Estudiantes**
+   - Ve "Mis Estudiantes"
+   - Verifica que ves los estudiantes de tus cursos
+   - Actualiza el progreso de algún estudiante
+
+3. **Calendario de Clases**
+   - Revisa el calendario con tus clases programadas
+   - Verifica las próximas clases
+
+### Dashboard de Admin
+
+1. **Login como Admin**
+   - Usa: admin@melodylabs.com / Admin123!
+   - Verifica que ves el dashboard de administrador
+
+2. **Gestión de Usuarios**
+   - Ve a "Gestión de Usuarios"
+   - Crea un nuevo usuario
+   - Edita un usuario existente
+   - Cambia roles de usuarios
+
+3. **Gestión de Cursos**
+   - Ve a "Gestión de Cursos"
+   - Crea un nuevo curso
+   - Edita un curso existente
+   - Asigna/desasigna profesores
+
+4. **Reportes**
+   - Revisa estadísticas generales
+   - Ver reportes financieros
+   - Exporta datos en Excel
+
+## 🔍 Accesibilidad
+
+El sitio cumple con WCAG 2.1 Nivel A:
+
+- **Navegación por teclado**: Todos los elementos interactivos son accesibles por teclado
+- **Contraste de colores**: Ratio mínimo 4.5:1 para texto normal
+- **Textos alternativos**: Imágenes tienen descripciones apropiadas
+- **Etiquetas ARIA**: Elementos tienen roles y etiquetas apropiadas
+- **Saltar navegación**: Enlace para saltar al contenido principal
+- **Idioma**: Correctamente definido como español
+
+## 📱 Responsive Design
+
+- **Mobile**: Diseño optimizado para pantallas pequeñas
+- **Tablet**: Layout adaptado para tablets
+- **Desktop**: Experiencia completa en escritorio
+- **Breakpoints**: Tailwind CSS con breakpoints estándar
+
+## 🛠️ Stack Tecnológico
+
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Estilos**: Tailwind CSS
+- **Backend**: Next.js API Routes
+- **Base de Datos**: Supabase (PostgreSQL)
+- **Autenticación**: Supabase Auth
+- **Pagos**: Simulación de PSE
+- **Chatbot**: API propia con FAQ dinámica
+
+## 🚀 Deployment
+
+### Vercel (Recomendado)
+
+1. **Conectar repositorio**
+   ```bash
+   vercel
+   ```
+
+2. **Configurar variables de entorno** en Vercel Dashboard
+
+3. **Deploy automático** con cada push a main
+
+### Otros servicios
+
+- **Netlify**: Compatible con Next.js
+- **Railway**: Soporte completo para Next.js
+- **Digital Ocean**: App Platform
+
+## 🔒 Seguridad
+
+- **Autenticación**: JWT tokens con Supabase
+- **Autorización**: RBAC con roles específicos
+- **Validación**: Zod para validación de formularios
+- **Sanitización**: Inputs sanitizados antes de guardar
+- **HTTPS**: Recomendado para producción
+
+## 📞 Soporte
+
+Para soporte técnico:
+- Email: soporte@melodylabs.com
+- Chat: Usa el chatbot en la plataforma
+- Documentación: Este archivo README
+
+## 📄 Licencia
+
+Este proyecto es propiedad de Academia Melody Labs. Todos los derechos reservados.
+
+---
+
+**¡Gracias por usar Academia Melody Labs! 🎵**

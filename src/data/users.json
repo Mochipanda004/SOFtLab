@@ -1,0 +1,20 @@
+[
+  {
+    "id": "12df6cae-397e-40e7-9aef-eb6fc207c08f",
+    "email": "elkinrojasortiz07@gmail.com",
+    "full_name": "Elkin",
+    "role": "alumno",
+    "password_hash": "39065ff88a763fe91e446309a7d3a20cebd569deada75d8c062fa5ad5fcbc2df",
+    "salt": "a6c9f16f60b97c49317c2dc11366ceea",
+    "created_at": "2025-11-17T05:35:12.275Z"
+  },
+  {
+    "id": "f601d76a-3064-4c9a-83b6-43082968491a",
+    "email": "elkin.rojas@utp.edu.co",
+    "full_name": "Elkin",
+    "role": "alumno",
+    "password_hash": "d049092ea9a4d67b06f16fa88d5335da3d0e2f21e4f0c79278cd6d3fbb7e99e8",
+    "salt": "af3ba221b8a239aec6cc377031c6469a",
+    "created_at": "2025-11-17T05:52:07.667Z"
+  }
+]
