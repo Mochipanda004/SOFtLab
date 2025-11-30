@@ -1,0 +1,1428 @@
+* {
+  box-sizing: border-box;
+}
+
+.sidebarEstudiantes {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding-bottom: 1px;
+  width: 1903px;
+  height: 1507px;
+
+  .adminDashboard31 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
+    background: #ffffff;
+    padding: 97px 200px 0px;
+    height: 1507px;
+    row-gap: 32px;
+
+    .icon2 {
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      overflow: hidden;
+    }
+
+    .icon {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      row-gap: 8px;
+
+      .heading1 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: flex-start;
+        align-self: stretch;
+        padding-right: 1246px;
+        padding-bottom: 2px;
+        height: 36px;
+
+        .panelDeAdministraciN {
+          margin: -2px 0px 0px;
+          line-height: 36px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 24px;
+        }
+      }
+
+      .paragraph {
+        display: flex;
+        flex-shrink: 0;
+        align-items: flex-start;
+        align-self: stretch;
+        padding-right: 1017px;
+        padding-bottom: 2px;
+        height: 24px;
+
+        .gestionaCursosProfes {
+          margin: -2px 0px 0px;
+          line-height: 24px;
+          letter-spacing: 0;
+          color: #6b7280;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .primitiveDiv13 {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      height: 1278px;
+      row-gap: 32px;
+
+      .estudiantes {
+        flex-shrink: 0;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #1a1a2e;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+
+      .tabList {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        background: #f3f4f6;
+        width: 574px;
+        height: 36px;
+
+        .resumen {
+          flex-grow: 1;
+          padding: 5px 8px;
+          width: 82px;
+          height: 29px;
+          text-align: center;
+          line-height: 20px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+
+        .primitiveButton {
+          display: flex;
+          flex-grow: 1;
+          align-items: center;
+          justify-content: center;
+          column-gap: 6px;
+          border: 1px solid #00000000;
+          border-radius: 16px;
+          background: #ffffff;
+          padding: 3px 7px;
+          height: 29px;
+        }
+
+        .primitiveButton2 {
+          display: flex;
+          flex-grow: 1;
+          align-items: center;
+          justify-content: center;
+          column-gap: 6px;
+          border: 1px solid #00000000;
+          border-radius: 16px;
+          padding: 3px 7px;
+          height: 29px;
+        }
+      }
+
+      .adminDashboard30 {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: flex-start;
+        align-self: stretch;
+        row-gap: 24px;
+
+        .container6 {
+          display: flex;
+          flex-shrink: 0;
+          align-items: center;
+          align-self: stretch;
+          justify-content: space-between;
+          height: 98px;
+
+          .paragraph2 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+
+            .totalEstudiantes {
+              flex-shrink: 0;
+              line-height: 20px;
+              letter-spacing: 0;
+              color: #6b7280;
+              font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+              font-size: 14px;
+            }
+          }
+
+          .adminDashboard {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            background: #ffffff;
+            padding: 16px 16px 24px;
+            width: 364px;
+            min-width: 364px;
+            height: 98px;
+
+            .container2 {
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              align-items: flex-start;
+              row-gap: 4px;
+
+              .a12 {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 104px;
+                height: 32px;
+                line-height: 32px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 24px;
+              }
+            }
+          }
+
+          .adminDashboard2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            background: #ffffff;
+            padding: 16px 16px 24px;
+            width: 364px;
+            min-width: 364px;
+            height: 98px;
+
+            .container3 {
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              align-items: flex-start;
+              row-gap: 4px;
+
+              .a8 {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 75px;
+                height: 32px;
+                line-height: 32px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 24px;
+              }
+            }
+          }
+
+          .adminDashboard3 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            background: #ffffff;
+            padding: 16px 16px 24px;
+            width: 364px;
+            min-width: 364px;
+            height: 98px;
+
+            .container4 {
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              align-items: flex-start;
+              row-gap: 4px;
+
+              .a3 {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 108px;
+                height: 32px;
+                line-height: 32px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 24px;
+              }
+            }
+          }
+
+          .adminDashboard4 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            background: #ffffff;
+            padding: 16px 16px 24px;
+            width: 364px;
+            min-width: 364px;
+            height: 98px;
+
+            .container5 {
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              align-items: flex-start;
+              row-gap: 4px;
+
+              .paragraph3 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                padding-right: 73px;
+                height: 32px;
+
+                .a60 {
+                  margin: -2px 0px 0px;
+                  width: 46px;
+                  line-height: 32px;
+                  letter-spacing: 0;
+                  color: #1a1a2e;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+        }
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          align-items: center;
+          align-self: stretch;
+          border: 1px solid #e5e7eb;
+          border-radius: 16px;
+          background: #ffffff;
+          padding-bottom: 24px;
+
+          .cardHeader {
+            display: flex;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            padding-right: 24px;
+            padding-left: 24px;
+            min-width: 1502px;
+            height: 60px;
+
+            .cardTitle {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              padding-bottom: 2px;
+              width: 139px;
+              height: 16px;
+
+              .listaDeEstudiantes {
+                margin: -2px 0px 0px;
+                line-height: 16px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 16px;
+              }
+            }
+
+            .adminDashboard5 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              column-gap: 8px;
+              width: 456px;
+
+              .input {
+                display: flex;
+                flex-grow: 1;
+                align-items: center;
+                border: 1px solid #e5e7eb;
+                border-radius: 10px;
+                background: #f9fafb;
+                padding: 3px 11px;
+                height: 36px;
+                overflow: hidden;
+
+                .buscarEstudiante {
+                  flex-shrink: 0;
+                  line-height: 16px;
+                  letter-spacing: 0;
+                  color: #6b7280;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 14px;
+                }
+              }
+
+              .primitiveButton3 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: center;
+                justify-content: space-between;
+                border: 1px solid #e5e7eb;
+                border-radius: 10px;
+                background: #f9fafb;
+                padding-right: 11px;
+                padding-left: 11px;
+                width: 192px;
+                min-width: 192px;
+                height: 36px;
+
+                .primitiveSpan {
+                  display: flex;
+                  flex-shrink: 0;
+                  align-items: center;
+                  column-gap: 8px;
+                  width: 109px;
+                  overflow: hidden;
+                }
+              }
+            }
+          }
+
+          .table {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: stretch;
+            margin: 24px 24px 0px;
+            overflow: hidden;
+
+            .tableHeader {
+              display: flex;
+              align-items: center;
+              align-self: stretch;
+
+              .tableRow {
+                display: flex;
+                flex-grow: 1;
+                align-items: center;
+                justify-content: space-between;
+                border-width: 0px 0px 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                width: 1454px;
+                min-width: 1454px;
+                height: 40px;
+
+                .estudiante {
+                  padding: 8px 0px 12px 8px;
+                  width: 370px;
+                  height: 40px;
+                  line-height: 20px;
+                  letter-spacing: 0;
+                  color: #1a1a2e;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 14px;
+                }
+
+                .cursosInscritos {
+                  padding: 8px 0px 12px 8px;
+                  width: 257px;
+                  height: 40px;
+                  line-height: 20px;
+                  letter-spacing: 0;
+                  color: #1a1a2e;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 14px;
+                }
+
+                .progreso {
+                  padding: 8px 0px 12px 8px;
+                  width: 133px;
+                  height: 40px;
+                  line-height: 20px;
+                  letter-spacing: 0;
+                  color: #1a1a2e;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 14px;
+                }
+
+                .estadoDePago {
+                  padding: 8px 0px 12px 8px;
+                  width: 208px;
+                  height: 40px;
+                  line-height: 20px;
+                  letter-spacing: 0;
+                  color: #1a1a2e;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 14px;
+                }
+
+                .fechaInscripciN {
+                  padding: 8px 0px 12px 8px;
+                  width: 229px;
+                  height: 40px;
+                  line-height: 20px;
+                  letter-spacing: 0;
+                  color: #1a1a2e;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 14px;
+                }
+
+                .acciones {
+                  padding: 8px 7px 12px 0px;
+                  width: 256px;
+                  height: 40px;
+                  text-align: right;
+                  line-height: 20px;
+                  letter-spacing: 0;
+                  color: #1a1a2e;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 14px;
+                }
+              }
+            }
+
+            .tableBody {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              align-self: stretch;
+
+              .a27Ene2024 {
+                padding: 22px 8px;
+                width: 229px;
+                height: 63px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+
+              .a14Ene2024 {
+                padding: 35px 8px;
+                width: 229px;
+                height: 89px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+
+              .container7 {
+                flex-shrink: 0;
+                align-self: stretch;
+                background: #179ae3;
+                height: 8px;
+              }
+
+              .alDa {
+                flex-shrink: 0;
+                line-height: 16px;
+                letter-spacing: 0;
+                color: #ffffff;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 12px;
+              }
+
+              .pianoBSico {
+                flex-shrink: 0;
+                line-height: 16px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 12px;
+              }
+
+              .lauraMartinezEmailCo {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 354px;
+                height: 20px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+
+              .lauraMartNez {
+                flex-shrink: 0;
+                align-self: stretch;
+                width: 354px;
+                height: 20px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+
+              .adminDashboard16 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 12px 8px;
+              }
+
+              .text {
+                display: flex;
+                align-items: flex-start;
+                width: 27px;
+                height: 20px;
+
+                .a75 {
+                  margin: -2px 0px 0px;
+                  width: 27px;
+                  line-height: 20px;
+                  letter-spacing: 0;
+                  color: #1a1a2e;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 14px;
+                }
+              }
+
+              .adminDashboard6 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 25px 8px;
+              }
+
+              .badge6 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 4px;
+                border: 1px solid #e5e7eb;
+                border-radius: 10px;
+                padding: 1px 7px;
+                width: 72px;
+                height: 22px;
+                overflow: hidden;
+              }
+
+              .paragraph4 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                padding-right: 197px;
+                height: 16px;
+
+                .a2Cursos {
+                  margin: -1px 0px 0px;
+                  width: 44px;
+                  line-height: 16px;
+                  letter-spacing: 0;
+                  color: #6b7280;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 12px;
+                }
+              }
+
+              .paragraph5 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                padding-right: 202px;
+                height: 16px;
+
+                .a1Curso {
+                  margin: -1px 0px 0px;
+                  width: 39px;
+                  line-height: 16px;
+                  letter-spacing: 0;
+                  color: #6b7280;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 12px;
+                }
+              }
+
+              .badge5 {
+                display: flex;
+                flex-grow: 1;
+                align-items: center;
+                justify-content: center;
+                column-gap: 4px;
+                border: 1px solid #e5e7eb;
+                border-radius: 10px;
+                padding: 1px 7px;
+                width: 87px;
+                overflow: hidden;
+              }
+
+              .button {
+                display: flex;
+                flex-shrink: 0;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                width: 36px;
+                height: 32px;
+              }
+
+              .badge3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 4px;
+                border: 1px solid #00000000;
+                border-radius: 10px;
+                background: #971bde;
+                padding: 1px 7px;
+                width: 49px;
+                height: 22px;
+                overflow: hidden;
+              }
+
+              .tableCell4 {
+                display: flex;
+                align-items: center;
+                padding: 21px 151px 21px 8px;
+              }
+
+              .adminDashboard19 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-end;
+                column-gap: 8px;
+                padding: 16px 8px;
+                width: 256px;
+              }
+
+              .adminDashboard17 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 9px 8px;
+                height: 63px;
+                row-gap: 8px;
+              }
+
+              .adminDashboard14 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 9px 8px;
+                height: 89px;
+                row-gap: 4px;
+
+                .badge8 {
+                  display: flex;
+                  flex-shrink: 0;
+                  align-items: center;
+                  justify-content: center;
+                  column-gap: 4px;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 10px;
+                  padding: 1px 7px;
+                  width: 94px;
+                  height: 22px;
+                  overflow: hidden;
+                }
+              }
+
+              .adminDashboard12 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 9px 8px;
+                height: 89px;
+                row-gap: 4px;
+
+                .badge7 {
+                  display: flex;
+                  flex-shrink: 0;
+                  align-items: center;
+                  justify-content: center;
+                  column-gap: 4px;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 10px;
+                  padding: 1px 7px;
+                  width: 106px;
+                  height: 22px;
+                  overflow: hidden;
+                }
+              }
+
+              .tableCell2 {
+                display: flex;
+                align-items: center;
+                padding: 34px 128px 34px 8px;
+              }
+
+              .adminDashboard10 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 9px 8px;
+                height: 89px;
+                row-gap: 4px;
+
+                .badge4 {
+                  display: flex;
+                  flex-shrink: 0;
+                  align-items: center;
+                  justify-content: center;
+                  column-gap: 4px;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 10px;
+                  padding: 1px 7px;
+                  width: 125px;
+                  height: 22px;
+                  overflow: hidden;
+                }
+              }
+
+              .adminDashboard9 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-end;
+                column-gap: 8px;
+                padding: 29px 8px;
+                width: 256px;
+              }
+
+              .tableCell {
+                display: flex;
+                align-items: center;
+                padding: 34px 151px 34px 8px;
+              }
+
+              .tableRow2 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-width: 0px 0px 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                min-width: 1454px;
+                height: 89px;
+
+                .adminDashboard7 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 9px 8px;
+                  height: 89px;
+                  row-gap: 4px;
+
+                  .badge {
+                    display: flex;
+                    flex-shrink: 0;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 4px;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 10px;
+                    padding: 1px 7px;
+                    width: 87px;
+                    height: 22px;
+                    overflow: hidden;
+                  }
+
+                  .badge2 {
+                    display: flex;
+                    flex-grow: 1;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 4px;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 10px;
+                    padding: 1px 7px;
+                    width: 96px;
+                    overflow: hidden;
+                  }
+                }
+
+                .adminDashboard8 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 27px 8px;
+
+                  .primitiveDiv {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8px;
+                    border-radius: 33554400px;
+                    background: #179ae333;
+                    padding-right: 29px;
+                    width: 117px;
+                    overflow: hidden;
+                  }
+                }
+              }
+
+              .tableRow3 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-width: 0px 0px 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                min-width: 1454px;
+                height: 89px;
+
+                .adminDashboard11 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 27px 8px;
+
+                  .primitiveDiv2 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8px;
+                    border-radius: 33554400px;
+                    background: #179ae333;
+                    padding-right: 65px;
+                    width: 117px;
+                    overflow: hidden;
+                  }
+                }
+              }
+
+              .tableRow4 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-width: 0px 0px 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                min-width: 1454px;
+                height: 89px;
+
+                .adminDashboard13 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 27px 8px;
+
+                  .primitiveDiv3 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8px;
+                    border-radius: 33554400px;
+                    background: #179ae333;
+                    padding-right: 12px;
+                    width: 117px;
+                    overflow: hidden;
+                  }
+                }
+              }
+
+              .tableRow5 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-width: 0px 0px 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                min-width: 1454px;
+                height: 89px;
+
+                .adminDashboard15 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 27px 8px;
+
+                  .primitiveDiv4 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8px;
+                    border-radius: 33554400px;
+                    background: #179ae333;
+                    padding-right: 82px;
+                    width: 117px;
+                    overflow: hidden;
+                  }
+                }
+              }
+
+              .tableRow6 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-width: 0px 0px 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                min-width: 1454px;
+                height: 63px;
+
+                .adminDashboard18 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 14px 8px;
+
+                  .primitiveDiv5 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8px;
+                    border-radius: 33554400px;
+                    background: #179ae333;
+                    padding-right: 47px;
+                    width: 117px;
+                    overflow: hidden;
+                  }
+                }
+
+                .tableCell3 {
+                  display: flex;
+                  align-items: center;
+                  padding: 21px 139px 21px 8px;
+
+                  .badge9 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 4px;
+                    border: 1px solid #00000000;
+                    border-radius: 10px;
+                    background: #ef4444;
+                    padding: 1px 7px;
+                    width: 61px;
+                    height: 22px;
+                    overflow: hidden;
+                  }
+                }
+              }
+
+              .tableRow7 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-width: 0px 0px 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                min-width: 1454px;
+                height: 89px;
+
+                .adminDashboard20 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 27px 8px;
+
+                  .primitiveDiv6 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8px;
+                    border-radius: 33554400px;
+                    background: #179ae333;
+                    padding-right: 18px;
+                    width: 117px;
+                    overflow: hidden;
+                  }
+                }
+              }
+
+              .tableRow8 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-width: 0px 0px 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                min-width: 1454px;
+                height: 89px;
+
+                .adminDashboard21 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 27px 8px;
+
+                  .primitiveDiv7 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8px;
+                    border-radius: 33554400px;
+                    background: #179ae333;
+                    padding-right: 6px;
+                    width: 117px;
+                    overflow: hidden;
+                  }
+                }
+              }
+
+              .tableRow9 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-width: 0px 0px 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                min-width: 1454px;
+                height: 89px;
+
+                .adminDashboard22 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 27px 8px;
+
+                  .primitiveDiv8 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8px;
+                    border-radius: 33554400px;
+                    background: #179ae333;
+                    padding-right: 94px;
+                    width: 117px;
+                    overflow: hidden;
+                  }
+                }
+              }
+
+              .tableRow10 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-width: 0px 0px 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                min-width: 1454px;
+                height: 63px;
+
+                .adminDashboard23 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 14px 8px;
+
+                  .primitiveDiv9 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8px;
+                    border-radius: 33554400px;
+                    background: #179ae333;
+                    padding-right: 53px;
+                    width: 117px;
+                    overflow: hidden;
+                  }
+                }
+              }
+
+              .tableRow11 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-width: 0px 0px 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                min-width: 1454px;
+                height: 63px;
+
+                .adminDashboard24 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 14px 8px;
+
+                  .primitiveDiv10 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8px;
+                    border-radius: 33554400px;
+                    background: #179ae333;
+                    padding-right: 35px;
+                    width: 117px;
+                    overflow: hidden;
+                  }
+                }
+              }
+
+              .tableRow12 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-width: 0px 0px 1px;
+                border-style: solid;
+                border-color: #e5e7eb;
+                min-width: 1454px;
+                height: 63px;
+
+                .adminDashboard25 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 14px 8px;
+
+                  .primitiveDiv11 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8px;
+                    border-radius: 33554400px;
+                    background: #179ae333;
+                    padding-right: 70px;
+                    width: 117px;
+                    overflow: hidden;
+                  }
+                }
+
+                .tableCell5 {
+                  display: flex;
+                  align-items: center;
+                  padding: 21px 128px 21px 8px;
+                }
+              }
+
+              .tableRow13 {
+                display: flex;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                min-width: 1454px;
+                height: 63px;
+
+                .adminDashboard26 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 12px 8px 11px;
+                }
+
+                .adminDashboard27 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 9px 8px 8px;
+                  height: 63px;
+                  row-gap: 8px;
+                }
+
+                .adminDashboard28 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 14px 8px 13px;
+
+                  .primitiveDiv12 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8px;
+                    border-radius: 33554400px;
+                    background: #179ae333;
+                    padding-right: 59px;
+                    width: 117px;
+                    overflow: hidden;
+                  }
+                }
+
+                .tableCell6 {
+                  display: flex;
+                  align-items: center;
+                  padding: 21px 151px 20px 8px;
+                }
+
+                .a4Feb2024 {
+                  padding: 22px 8px 21px;
+                  width: 229px;
+                  height: 63px;
+                  line-height: 20px;
+                  letter-spacing: 0;
+                  color: #1a1a2e;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 14px;
+                }
+
+                .adminDashboard29 {
+                  display: flex;
+                  align-items: flex-start;
+                  justify-content: flex-end;
+                  column-gap: 8px;
+                  padding: 16px 8px 15px;
+                  width: 256px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .container10 {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: space-between;
+      border-width: 0px 0px 1px;
+      border-style: solid;
+      border-color: #e5e7eb;
+      background: #ffffff;
+      padding-right: 200px;
+      padding-left: 200px;
+      width: 1903px;
+      height: 65px;
+
+      .container8 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        column-gap: 8px;
+        width: 152px;
+
+        .text2 {
+          display: flex;
+          flex-grow: 1;
+          align-items: flex-start;
+
+          .melodyLabs {
+            flex-shrink: 0;
+            line-height: 28px;
+            letter-spacing: 0;
+            color: #1a1a2e;
+            font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .container9 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        column-gap: 12px;
+        width: 229px;
+
+        .button2 {
+          display: flex;
+          flex-grow: 1;
+          align-items: flex-start;
+          justify-content: space-between;
+          border-radius: 10px;
+          padding: 6px 14px 10px 12px;
+
+          .icon3 {
+            margin-top: 4px;
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+          }
+
+          .administradorDemo {
+            line-height: 20px;
+            letter-spacing: 0;
+            color: #1a1a2e;
+            font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+            font-size: 14px;
+          }
+        }
+
+        .button3 {
+          display: flex;
+          flex-shrink: 0;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
+
+    .chatbotWidget {
+      display: flex;
+      position: absolute;
+      top: 864px;
+      left: 1686px;
+      flex-shrink: 0;
+      align-items: center;
+      column-gap: 12px;
+      z-index: 1;
+      width: 193px;
+      height: 56px;
+
+      .text3 {
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-start;
+        opacity: 0.99;
+        border-radius: 33554400px;
+        box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+        background: #1a1a2e;
+        padding: 11px 16px 0px;
+        height: 40px;
+
+        .aTienesDudas {
+          flex-shrink: 0;
+          line-height: 20px;
+          letter-spacing: 0;
+          color: #ffffff;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+      }
+
+      .button4 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 33554400px;
+        box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+        background: #179ae3;
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
+}

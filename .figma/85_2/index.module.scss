@@ -1,0 +1,1274 @@
+* {
+  box-sizing: border-box;
+}
+
+.courseCatalog2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 97px 79px 0px;
+  width: 1662px;
+  height: 1641px;
+  row-gap: 32px;
+
+  .verDetalles {
+    flex-shrink: 0;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #ffffff;
+    font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .icon2 {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: flex-start;
+    align-self: stretch;
+    row-gap: 8px;
+
+    .heading1 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      padding-right: 1291px;
+      padding-bottom: 2px;
+      height: 36px;
+
+      .catLogoDeCursos {
+        margin: -2px 0px 0px;
+        line-height: 36px;
+        letter-spacing: 0;
+        color: #1a1a2e;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 24px;
+      }
+    }
+
+    .paragraph {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      padding-right: 978px;
+      padding-bottom: 2px;
+      height: 24px;
+
+      .exploraNuestraAmplia {
+        margin: -2px 0px 0px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #6b7280;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .container4 {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: flex-start;
+    align-self: stretch;
+    row-gap: 16px;
+
+    .input {
+      display: flex;
+      position: relative;
+      flex-shrink: 0;
+      align-items: center;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      background: #f9fafb;
+      padding: 3px 11px 3px 39px;
+      width: 1504px;
+      height: 36px;
+      overflow: hidden;
+
+      .buscarCursos {
+        flex-shrink: 0;
+        line-height: 16px;
+        letter-spacing: 0;
+        color: #6b7280;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+
+      .icon {
+        position: absolute;
+        top: 9px;
+        left: 11px;
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+      }
+    }
+
+    .container3 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      align-self: stretch;
+      justify-content: space-between;
+      padding-right: 924px;
+      height: 36px;
+
+      .filtros {
+        flex-shrink: 0;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #1a1a2e;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+
+      .container2 {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        width: 64px;
+        height: 36px;
+
+        .text {
+          display: flex;
+          flex-grow: 1;
+          align-items: flex-start;
+        }
+      }
+
+      .primitiveButton {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        background: #f9fafb;
+        padding-right: 11px;
+        padding-left: 11px;
+        width: 160px;
+        min-width: 160px;
+        height: 36px;
+
+        .primitiveSpan {
+          display: flex;
+          flex-shrink: 0;
+          align-items: center;
+          column-gap: 8px;
+          width: 37px;
+          overflow: hidden;
+        }
+      }
+
+      .primitiveButton2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        background: #f9fafb;
+        padding-right: 11px;
+        padding-left: 11px;
+        width: 160px;
+        min-width: 160px;
+        height: 36px;
+
+        .primitiveSpan2 {
+          display: flex;
+          flex-shrink: 0;
+          align-items: center;
+          column-gap: 8px;
+          width: 104px;
+          overflow: hidden;
+        }
+      }
+
+      .primitiveButton3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        background: #f9fafb;
+        padding-right: 11px;
+        padding-left: 11px;
+        width: 160px;
+        min-width: 160px;
+        height: 36px;
+
+        .primitiveSpan3 {
+          display: flex;
+          flex-shrink: 0;
+          align-items: center;
+          column-gap: 8px;
+          width: 35px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .paragraph2 {
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-start;
+    align-self: stretch;
+    padding-right: 1350px;
+    height: 20px;
+
+    .mostrando6De6Cursos {
+      margin: -2px 0px 0px;
+      width: 154px;
+      line-height: 20px;
+      letter-spacing: 0;
+      color: #6b7280;
+      font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+  }
+
+  .container11 {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-between;
+    height: 1256px;
+
+    .piano {
+      flex-shrink: 0;
+      align-self: stretch;
+      width: 435px;
+      height: 20px;
+      line-height: 20px;
+      letter-spacing: 0;
+      color: #6b7280;
+      font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .pianoBSico {
+      margin: -2px 0px 0px;
+      line-height: 24px;
+      letter-spacing: 0;
+      color: #1a1a2e;
+      font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    .bSico {
+      flex-shrink: 0;
+      line-height: 16px;
+      letter-spacing: 0;
+      color: #ffffff;
+      font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+      font-size: 12px;
+    }
+
+    .badge4 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      column-gap: 4px;
+      border: 1px solid #00000000;
+      border-radius: 10px;
+      background: #971bde;
+      padding: 1px 7px;
+      width: 59px;
+      height: 22px;
+      overflow: hidden;
+    }
+
+    .badge3 {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: center;
+      column-gap: 4px;
+      border: 1px solid #00000000;
+      border-radius: 10px;
+      background: #f59e0b;
+      padding: 1px 7px;
+      height: 22px;
+      overflow: hidden;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 8px;
+      margin-top: 48px;
+      border-radius: 10px;
+      background: #179ae3;
+      padding: 8px 16px;
+      width: 435px;
+    }
+
+    .badge2 {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: center;
+      column-gap: 4px;
+      border: 1px solid #00000000;
+      border-radius: 10px;
+      background: #971bde;
+      padding: 1px 7px;
+      height: 22px;
+      overflow: hidden;
+    }
+
+    .badge {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      column-gap: 4px;
+      border: 1px solid #00000000;
+      border-radius: 10px;
+      background: #10b981;
+      padding: 1px 7px;
+      width: 53px;
+      height: 22px;
+      overflow: hidden;
+    }
+
+    .courseCard4 {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+
+      .paragraph3 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: flex-start;
+        align-self: stretch;
+        padding-right: 336px;
+        height: 24px;
+        overflow: hidden;
+
+        .a450000Cop {
+          margin: -2px 0px 0px;
+          width: 99px;
+          line-height: 24px;
+          letter-spacing: 0;
+          color: #179ae3;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 16px;
+        }
+      }
+
+      .a5CuposDisponibles {
+        flex-shrink: 0;
+        align-self: stretch;
+        width: 435px;
+        height: 20px;
+        overflow: hidden;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #6b7280;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+    }
+
+    .autoWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: stretch;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #ffffff;
+        padding-bottom: 24px;
+        overflow: hidden;
+
+        .container5 {
+          display: flex;
+          align-items: flex-start;
+          column-gap: 8px;
+          padding: 12px 12px 0px 338px;
+          width: 483px;
+          height: 192px;
+          background-image: url(../image/mim06yr2-2sjsyva.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        .courseCard {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin: 48px 24px 0px;
+          row-gap: 4px;
+
+          .heading3 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            padding-right: 341px;
+            padding-bottom: 2px;
+            height: 24px;
+            overflow: hidden;
+          }
+        }
+
+        .cardContent {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-top: 54px;
+          padding: 24px 24px 0px;
+          height: 164px;
+          row-gap: 12px;
+
+          .courseCard2 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 8px;
+
+            .text2 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              width: 127px;
+              height: 20px;
+              overflow: hidden;
+
+              .profMarAGonzLez {
+                margin: -2px 0px 0px;
+                width: 128px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+
+          .courseCard3 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 8px;
+
+            .text3 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              width: 249px;
+              height: 20px;
+              overflow: hidden;
+
+              .lunesYMiRcoles180019 {
+                margin: -2px 0px 0px;
+                width: 249px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .card2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+        margin-top: 24px;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #ffffff;
+        padding-bottom: 24px;
+        overflow: hidden;
+
+        .container6 {
+          display: flex;
+          align-items: flex-start;
+          column-gap: 8px;
+          padding: 12px 12px 0px 338px;
+          width: 483px;
+          height: 192px;
+          background-image: url(../image/mim06yr2-huort2p.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        .courseCard5 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin: 48px 24px 0px;
+          row-gap: 4px;
+
+          .heading32 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            padding-right: 250px;
+            padding-bottom: 2px;
+            height: 24px;
+            overflow: hidden;
+          }
+        }
+
+        .cardContent2 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-top: 54px;
+          padding: 24px 24px 0px;
+          height: 164px;
+          row-gap: 12px;
+
+          .courseCard6 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 8px;
+
+            .text4 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              width: 127px;
+              height: 20px;
+              overflow: hidden;
+
+              .profLuisHernNdez {
+                margin: -2px 0px 0px;
+                width: 127px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+
+          .courseCard7 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 8px;
+
+            .text5 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              width: 192px;
+              height: 20px;
+              overflow: hidden;
+
+              .sBados100012003Meses {
+                margin: -2px 0px 0px;
+                width: 192px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .autoWrapper2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: stretch;
+
+      .card3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #ffffff;
+        padding-bottom: 24px;
+        overflow: hidden;
+
+        .container7 {
+          display: flex;
+          align-items: flex-start;
+          column-gap: 8px;
+          padding: 12px 12px 0px 326px;
+          width: 483px;
+          height: 192px;
+          background-image: url(../image/mim06yr2-41grldt.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        .courseCard8 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin: 48px 24px 0px;
+          row-gap: 4px;
+
+          .heading33 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            padding-right: 297px;
+            padding-bottom: 2px;
+            height: 24px;
+            overflow: hidden;
+          }
+        }
+
+        .cardContent3 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-top: 54px;
+          padding: 24px 24px 0px;
+          height: 164px;
+          row-gap: 12px;
+
+          .courseCard9 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 8px;
+
+            .text6 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              width: 124px;
+              height: 20px;
+              overflow: hidden;
+
+              .profCarlosRamRez {
+                margin: -2px 0px 0px;
+                width: 124px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+
+          .courseCard10 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 8px;
+
+            .text7 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              width: 236px;
+              height: 20px;
+              overflow: hidden;
+
+              .martesYJueves1700183 {
+                margin: -2px 0px 0px;
+                width: 237px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .card4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+        margin-top: 24px;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #ffffff;
+        padding-bottom: 24px;
+        overflow: hidden;
+
+        .container8 {
+          display: flex;
+          align-items: flex-start;
+          column-gap: 8px;
+          padding: 12px 12px 0px 356px;
+          width: 483px;
+          height: 192px;
+          background-image: url(../image/mim06yr2-5g1nos0.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        .courseCard11 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin: 48px 24px 0px;
+          row-gap: 4px;
+
+          .heading34 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            padding-right: 331px;
+            padding-bottom: 2px;
+            height: 24px;
+            overflow: hidden;
+          }
+        }
+
+        .cardContent4 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-top: 54px;
+          padding: 24px 24px 0px;
+          height: 164px;
+          row-gap: 12px;
+
+          .courseCard12 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 8px;
+
+            .text8 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              width: 117px;
+              height: 20px;
+              overflow: hidden;
+
+              .profPatriciaLPez {
+                margin: -2px 0px 0px;
+                width: 118px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+
+          .courseCard13 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 8px;
+
+            .text9 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              height: 20px;
+              overflow: hidden;
+
+              .lunes190020302Meses {
+                margin: -2px 0px 0px;
+                width: 175px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .autoWrapper3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: stretch;
+
+      .card5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #ffffff;
+        padding-bottom: 24px;
+        overflow: hidden;
+
+        .container9 {
+          display: flex;
+          align-items: flex-start;
+          column-gap: 8px;
+          padding: 12px 12px 0px 320px;
+          width: 483px;
+          height: 192px;
+          background-image: url(../image/mim06yr2-evxm33i.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+
+          .badge5 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            column-gap: 4px;
+            border: 1px solid #00000000;
+            border-radius: 10px;
+            background: #ef4444;
+            padding: 1px 7px;
+            width: 71px;
+            height: 22px;
+            overflow: hidden;
+          }
+        }
+
+        .courseCard14 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin: 48px 24px 0px;
+          row-gap: 4px;
+
+          .heading35 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            padding-right: 320px;
+            padding-bottom: 2px;
+            height: 24px;
+            overflow: hidden;
+          }
+        }
+
+        .cardContent5 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-top: 54px;
+          padding: 24px 24px 0px;
+          height: 164px;
+          row-gap: 12px;
+
+          .courseCard15 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 8px;
+
+            .text10 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              width: 114px;
+              height: 20px;
+              overflow: hidden;
+
+              .profAnaMartNez {
+                margin: -2px 0px 0px;
+                width: 115px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+
+          .courseCard16 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 8px;
+
+            .text11 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              width: 185px;
+              height: 20px;
+              overflow: hidden;
+
+              .viernes160018006Mese {
+                margin: -2px 0px 0px;
+                width: 185px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .button2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 8px;
+          opacity: 0.5;
+          margin-top: 48px;
+          border-radius: 10px;
+          background: #971bde;
+          padding: 8px 16px;
+          width: 435px;
+        }
+      }
+
+      .card6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+        margin-top: 24px;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #ffffff;
+        padding-bottom: 24px;
+        overflow: hidden;
+
+        .container10 {
+          display: flex;
+          align-items: flex-start;
+          column-gap: 8px;
+          padding: 12px 12px 0px 326px;
+          width: 483px;
+          height: 192px;
+          background-image: url(../image/mim06yr2-8tsp97f.png);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        .courseCard17 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin: 48px 24px 0px;
+          row-gap: 4px;
+
+          .heading36 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            padding-right: 296px;
+            padding-bottom: 2px;
+            height: 24px;
+            overflow: hidden;
+          }
+        }
+
+        .cardContent6 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-top: 54px;
+          padding: 24px 24px 0px;
+          height: 164px;
+          row-gap: 12px;
+
+          .courseCard18 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 8px;
+
+            .text12 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              width: 114px;
+              height: 20px;
+              overflow: hidden;
+
+              .profRobertoSilva {
+                margin: -2px 0px 0px;
+                width: 114px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+
+          .courseCard19 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 8px;
+
+            .text13 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              width: 199px;
+              height: 20px;
+              overflow: hidden;
+
+              .miRcoles180019304Mes {
+                margin: -2px 0px 0px;
+                width: 199px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .courseCatalog {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: flex-start;
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    border-color: #e5e7eb;
+    background: #ffffff;
+    padding-right: 63px;
+    padding-left: 63px;
+    width: 1662px;
+    height: 65px;
+
+    .container14 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      align-self: stretch;
+      justify-content: space-between;
+      padding-right: 16px;
+      padding-left: 618px;
+      height: 64px;
+
+      .container12 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        column-gap: 8px;
+        width: 152px;
+
+        .icon3 {
+          flex-shrink: 0;
+          width: 32px;
+          height: 32px;
+          overflow: hidden;
+        }
+
+        .text14 {
+          display: flex;
+          flex-grow: 1;
+          align-items: flex-start;
+
+          .melodyLabs {
+            flex-shrink: 0;
+            line-height: 28px;
+            letter-spacing: 0;
+            color: #1a1a2e;
+            font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .container13 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        column-gap: 12px;
+        width: 228px;
+
+        .iniciarSesiN {
+          flex-grow: 1;
+          padding: 8px 16px;
+          width: 114px;
+          height: 36px;
+          text-align: center;
+          line-height: 20px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+
+        .button3 {
+          display: flex;
+          flex-shrink: 0;
+          align-items: center;
+          justify-content: center;
+          column-gap: 8px;
+          border-radius: 10px;
+          background: #179ae3;
+          padding: 8px 16px;
+          width: 102px;
+        }
+      }
+    }
+
+    .button4 {
+      display: flex;
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      flex-shrink: 0;
+      align-items: center;
+      border-radius: 10px;
+      padding: 8px 10px;
+      width: 36px;
+      height: 32px;
+
+      .icon4 {
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+      }
+    }
+
+    .backButton {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-shrink: 0;
+      align-items: flex-start;
+      z-index: 1;
+      padding-right: 1px;
+      width: 1px;
+      height: 1px;
+
+      .volver {
+        margin: -2px 0px 0px;
+        width: 0;
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #1a1a2e;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .chatbotWidget {
+    display: flex;
+    position: absolute;
+    top: 864px;
+    left: 1445px;
+    flex-shrink: 0;
+    align-items: center;
+    column-gap: 12px;
+    z-index: 1;
+    width: 193px;
+    height: 56px;
+
+    .text15 {
+      display: flex;
+      flex-grow: 1;
+      align-items: flex-start;
+      opacity: 0.5;
+      border-radius: 33554400px;
+      box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+      background: #1a1a2e;
+      padding: 11px 16px 0px;
+      height: 40px;
+    }
+
+    .button5 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 33554400px;
+      box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+      background: #179ae3;
+      width: 56px;
+      height: 56px;
+    }
+  }
+}

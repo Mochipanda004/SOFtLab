@@ -1,0 +1,1028 @@
+* {
+  box-sizing: border-box;
+}
+
+.courseDetail9 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding-bottom: 32px;
+  width: 1662px;
+  height: 1761px;
+
+  .courseDetail {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-between;
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    border-color: #e5e7eb;
+    background: #ffffff;
+    padding-right: 63px;
+    padding-left: 16px;
+    min-width: 1662px;
+    height: 65px;
+
+    .button {
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      padding: 8px 10px;
+
+      .icon {
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+      }
+    }
+
+    .compartir {
+      padding: 22px 32px 22px 1439px;
+      width: 1536px;
+      height: 64px;
+      text-align: center;
+      line-height: 20px;
+      letter-spacing: 0;
+      color: #1a1a2e;
+      font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    padding: 266px 63px 24px;
+    height: 384px;
+    row-gap: 12px;
+    background-image: linear-gradient(0deg, #00000099 0%, #00000000 100%),
+      url(../image/mim0i6l6-uam9x4f.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      column-gap: 8px;
+
+      .bSico {
+        flex-shrink: 0;
+        line-height: 16px;
+        letter-spacing: 0;
+        color: #ffffff;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 12px;
+      }
+
+      .badge {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        column-gap: 4px;
+        border: 1px solid #00000000;
+        border-radius: 10px;
+        background: #10b981;
+        padding: 1px 7px;
+        width: 53px;
+        height: 22px;
+        overflow: hidden;
+      }
+
+      .badge2 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        column-gap: 4px;
+        border: 1px solid #00000000;
+        border-radius: 10px;
+        background: #971bde;
+        padding: 1px 7px;
+        width: 72px;
+        height: 22px;
+        overflow: hidden;
+      }
+    }
+
+    .heading1 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      padding-right: 1442px;
+      padding-bottom: 2px;
+      height: 24px;
+
+      .pianoBSico {
+        margin: -2px 0px 0px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #ffffff;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+    }
+
+    .paragraph {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      padding-right: 1277px;
+      padding-bottom: 1px;
+      height: 28px;
+
+      .porProfMarAGonzLez {
+        margin: -1px 0px 0px;
+        width: 259px;
+        line-height: 28px;
+        letter-spacing: 0;
+        color: #ffffffe5;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .container24 {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-between;
+    margin: 32px 79px 0px;
+    min-width: 1504px;
+    height: 1248px;
+
+    .dominarLaPosturaCorr {
+      margin: -2px 0px 0px;
+      line-height: 24px;
+      letter-spacing: 0;
+      color: #1a1a2e;
+      font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    .noSeRequiereExperien {
+      margin: -2px 0px 0px;
+      line-height: 24px;
+      letter-spacing: 0;
+      color: #6b7280;
+      font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    .paragraph8 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      padding-bottom: 2px;
+      height: 24px;
+    }
+
+    .container10 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 32px;
+
+      .acercaDelCurso {
+        margin: -2px 0px 0px;
+        line-height: 16px;
+        letter-spacing: 0;
+        color: #1a1a2e;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: flex-start;
+        align-self: stretch;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #ffffff;
+        padding: 23px 0px 23px 23px;
+        height: 148px;
+        row-gap: 30px;
+
+        .cardTitle {
+          display: flex;
+          flex-shrink: 0;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-right: 25px;
+          padding-right: 822px;
+          padding-bottom: 2px;
+          height: 16px;
+        }
+
+        .courseDetail2 {
+          display: flex;
+          flex-grow: 1;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-right: 25px;
+          padding-right: 49px;
+          padding-bottom: 2px;
+
+          .aprendeLosFundamento {
+            margin: -2px 0px 0px;
+            width: 893px;
+            line-height: 26px;
+            letter-spacing: 0;
+            color: #6b7280;
+            font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .card2 {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: flex-start;
+        align-self: stretch;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #ffffff;
+        padding: 23px 0px 23px 23px;
+        height: 264px;
+        row-gap: 30px;
+
+        .cardTitle2 {
+          display: flex;
+          flex-shrink: 0;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-right: 25px;
+          padding-right: 807px;
+          padding-bottom: 2px;
+          height: 16px;
+        }
+
+        .courseDetail3 {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-right: 25px;
+          row-gap: 12px;
+
+          .icon2 {
+            width: 20px;
+            height: 20px;
+            overflow: hidden;
+          }
+
+          .listItem {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            padding-right: 599px;
+            height: 24px;
+
+            .text {
+              display: flex;
+              align-items: flex-start;
+              padding-bottom: 2px;
+              width: 311px;
+              height: 24px;
+            }
+          }
+
+          .listItem2 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            padding-right: 671px;
+            height: 24px;
+
+            .text2 {
+              display: flex;
+              align-items: flex-start;
+              padding-bottom: 2px;
+              width: 239px;
+              height: 24px;
+            }
+          }
+
+          .listItem3 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            padding-right: 658px;
+            height: 24px;
+
+            .text3 {
+              display: flex;
+              align-items: flex-start;
+              padding-bottom: 2px;
+              width: 252px;
+              height: 24px;
+            }
+          }
+
+          .listItem4 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            padding-right: 678px;
+            height: 24px;
+
+            .text4 {
+              display: flex;
+              align-items: flex-start;
+              padding-bottom: 2px;
+              width: 232px;
+              height: 24px;
+            }
+          }
+
+          .listItem5 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            padding-right: 625px;
+            height: 24px;
+
+            .text5 {
+              display: flex;
+              align-items: flex-start;
+              padding-bottom: 2px;
+              width: 285px;
+              height: 24px;
+            }
+          }
+        }
+      }
+
+      .card3 {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: flex-start;
+        align-self: stretch;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #ffffff;
+        padding: 23px 0px 23px 23px;
+        height: 348px;
+        row-gap: 30px;
+
+        .cardTitle3 {
+          display: flex;
+          flex-shrink: 0;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-right: 25px;
+          padding-right: 802px;
+          padding-bottom: 2px;
+          height: 16px;
+        }
+
+        .courseDetail4 {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-right: 25px;
+          row-gap: 12px;
+
+          .text6 {
+            display: flex;
+            align-items: flex-start;
+            border-radius: 33554400px;
+            background: #179ae31a;
+            padding: 6px 12px;
+            width: 32px;
+
+            .a1 {
+              flex-shrink: 0;
+              line-height: 20px;
+              letter-spacing: 0;
+              color: #179ae3;
+              font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+              font-size: 14px;
+            }
+          }
+
+          .container3 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            height: 32px;
+
+            .paragraph2 {
+              display: flex;
+              align-items: flex-start;
+              padding-right: 635px;
+              padding-bottom: 2px;
+              height: 24px;
+            }
+          }
+
+          .container4 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            height: 32px;
+
+            .paragraph3 {
+              display: flex;
+              align-items: flex-start;
+              padding-right: 641px;
+              padding-bottom: 2px;
+              height: 24px;
+            }
+          }
+
+          .container5 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            height: 32px;
+
+            .paragraph4 {
+              display: flex;
+              align-items: flex-start;
+              padding-right: 700px;
+              padding-bottom: 2px;
+              height: 24px;
+            }
+          }
+
+          .container6 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            height: 32px;
+
+            .paragraph5 {
+              display: flex;
+              align-items: flex-start;
+              padding-right: 657px;
+              padding-bottom: 2px;
+              height: 24px;
+            }
+          }
+
+          .container7 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            height: 32px;
+
+            .paragraph6 {
+              display: flex;
+              align-items: flex-start;
+              padding-right: 730px;
+              padding-bottom: 2px;
+              height: 24px;
+            }
+          }
+
+          .container8 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            height: 32px;
+
+            .paragraph7 {
+              display: flex;
+              align-items: flex-start;
+              padding-right: 815px;
+              padding-bottom: 2px;
+              height: 24px;
+            }
+          }
+        }
+      }
+
+      .card4 {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: flex-start;
+        align-self: stretch;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #ffffff;
+        padding: 23px 0px 23px 23px;
+        height: 184px;
+        row-gap: 30px;
+
+        .cardTitle4 {
+          display: flex;
+          flex-shrink: 0;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-right: 25px;
+          padding-right: 867px;
+          padding-bottom: 2px;
+          height: 16px;
+        }
+
+        .courseDetail5 {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-right: 25px;
+          row-gap: 8px;
+
+          .listItem6 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            padding: 0px 679px 2px 23px;
+            height: 24px;
+          }
+
+          .listItem7 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            padding: 0px 581px 2px 23px;
+            height: 24px;
+          }
+
+          .listItem8 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            padding: 0px 530px 2px 23px;
+            height: 24px;
+          }
+        }
+      }
+
+      .card5 {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: flex-start;
+        align-self: stretch;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #ffffff;
+        padding: 23px 0px 23px 23px;
+        height: 176px;
+        row-gap: 30px;
+
+        .cardTitle5 {
+          display: flex;
+          flex-shrink: 0;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-right: 25px;
+          padding-right: 860px;
+          padding-bottom: 2px;
+          height: 16px;
+        }
+
+        .courseDetail6 {
+          display: flex;
+          flex-grow: 1;
+          align-items: flex-start;
+          column-gap: 16px;
+          width: 942px;
+
+          .imageWithFallback {
+            flex-shrink: 0;
+            border-radius: 33554400px;
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+          }
+
+          .container9 {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            align-items: flex-start;
+            height: 80px;
+            row-gap: 8px;
+
+            .heading3 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              align-self: stretch;
+              padding-right: 718px;
+              padding-bottom: 2px;
+              height: 27px;
+
+              .marAGonzLez {
+                margin: -2px 0px 0px;
+                line-height: 27px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .container23 {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 592px;
+
+      .cardContent {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: flex-start;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        background: #ffffff;
+        padding: 24px 24px 0px;
+        height: 656px;
+        row-gap: 24px;
+
+        .courseDetail7 {
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-right: 259px;
+          row-gap: 4px;
+
+          .paragraph9 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            padding-bottom: 3px;
+            height: 36px;
+
+            .a450000 {
+              margin: -3px 0px 0px;
+              width: 245px;
+              line-height: 36px;
+              letter-spacing: 0;
+              color: #179ae3;
+              font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+              font-size: 30px;
+            }
+          }
+
+          .paragraph10 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            padding-right: 23px;
+            height: 20px;
+
+            .pagoNicoPor3Meses {
+              margin: -2px 0px 0px;
+              width: 148px;
+              line-height: 20px;
+              letter-spacing: 0;
+              color: #6b7280;
+              font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .primitiveDiv {
+          flex-shrink: 0;
+          align-self: stretch;
+          background: #e5e7eb;
+          height: 1px;
+        }
+
+        .courseDetail8 {
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          align-items: flex-start;
+          align-self: stretch;
+          row-gap: 16px;
+
+          .icon3 {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            overflow: hidden;
+          }
+
+          .paragraph13 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-start;
+            align-self: stretch;
+            padding-bottom: 2px;
+            height: 24px;
+          }
+
+          .container12 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 12px;
+
+            .container11 {
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              align-items: flex-start;
+
+              .paragraph11 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                padding-right: 3px;
+                padding-bottom: 2px;
+                height: 24px;
+              }
+            }
+          }
+
+          .container14 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 12px;
+
+            .container13 {
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              align-items: flex-start;
+
+              .paragraph12 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                padding-right: 159px;
+                padding-bottom: 2px;
+                height: 24px;
+              }
+            }
+          }
+
+          .container16 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 12px;
+
+            .container15 {
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              align-items: flex-start;
+
+              .paragraph14 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                padding-right: 2px;
+                padding-bottom: 2px;
+                height: 24px;
+              }
+
+              .paragraph15 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                padding-right: 1px;
+                padding-bottom: 2px;
+                height: 24px;
+              }
+            }
+          }
+
+          .container18 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 12px;
+
+            .container17 {
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              align-items: flex-start;
+
+              .paragraph16 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                padding-right: 90px;
+                padding-bottom: 2px;
+                height: 24px;
+              }
+            }
+          }
+
+          .container20 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 12px;
+
+            .container19 {
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              align-items: flex-start;
+
+              .paragraph17 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                padding-right: 31px;
+                padding-bottom: 2px;
+                height: 24px;
+              }
+            }
+          }
+
+          .container22 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            column-gap: 12px;
+
+            .container21 {
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              align-items: flex-start;
+
+              .paragraph18 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                padding-right: 65px;
+                padding-bottom: 2px;
+                height: 24px;
+              }
+
+              .paragraph19 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                height: 24px;
+
+                .a4RecursosIncluidos {
+                  margin: -2px 0px 0px;
+                  width: 139px;
+                  line-height: 24px;
+                  letter-spacing: 0;
+                  color: #1a1a2e;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+
+        .button2 {
+          display: flex;
+          flex-shrink: 0;
+          align-items: flex-start;
+          align-self: stretch;
+          border-radius: 10px;
+          background: #179ae3;
+          padding: 8px 163px 12px;
+
+          .inscribirseAhora {
+            line-height: 20px;
+            letter-spacing: 0;
+            color: #ffffff;
+            font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+            font-size: 14px;
+          }
+        }
+
+        .alInscribirteAceptas {
+          flex-shrink: 0;
+          align-self: stretch;
+          width: 430px;
+          height: 16px;
+          text-align: center;
+          line-height: 16px;
+          letter-spacing: 0;
+          color: #6b7280;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .chatbotWidget {
+    display: flex;
+    position: absolute;
+    top: 864px;
+    left: 1445px;
+    align-items: center;
+    column-gap: 12px;
+    width: 193px;
+    height: 56px;
+
+    .text7 {
+      display: flex;
+      flex-grow: 1;
+      align-items: flex-start;
+      border-radius: 33554400px;
+      box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+      background: #1a1a2e;
+      padding: 11px 16px 0px;
+      height: 40px;
+
+      .aTienesDudas {
+        flex-shrink: 0;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #ffffff;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+    }
+
+    .button3 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 33554400px;
+      box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+      background: #179ae3;
+      width: 56px;
+      height: 56px;
+
+      .icon4 {
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,416 @@
+* {
+  box-sizing: border-box;
+}
+
+.adminDashboard4 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 97px 207px 0px;
+  width: 1918px;
+  height: 944px;
+  row-gap: 32px;
+
+  .guardarConfiguraciN {
+    flex-shrink: 0;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #ffffff;
+    font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .icon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: flex-start;
+    align-self: stretch;
+    row-gap: 8px;
+
+    .heading1 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      padding-right: 1246px;
+      padding-bottom: 2px;
+      height: 36px;
+
+      .panelDeAdministraciN {
+        margin: -2px 0px 0px;
+        line-height: 36px;
+        letter-spacing: 0;
+        color: #1a1a2e;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 24px;
+      }
+    }
+
+    .paragraph {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      padding-right: 1017px;
+      padding-bottom: 2px;
+      height: 24px;
+
+      .gestionaCursosProfes {
+        margin: -2px 0px 0px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #6b7280;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .primitiveDiv {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: flex-start;
+    align-self: stretch;
+    height: 458px;
+    row-gap: 32px;
+
+    .configuraciN {
+      flex-shrink: 0;
+      line-height: 20px;
+      letter-spacing: 0;
+      color: #1a1a2e;
+      font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .tabList {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: #f3f4f6;
+      width: 574px;
+      height: 36px;
+
+      .resumen {
+        flex-grow: 1;
+        padding: 5px 8px;
+        width: 82px;
+        height: 29px;
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #1a1a2e;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+
+      .primitiveButton {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        column-gap: 6px;
+        border: 1px solid #00000000;
+        border-radius: 16px;
+        background: #ffffff;
+        padding: 3px 7px;
+        height: 29px;
+      }
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      align-items: center;
+      align-self: stretch;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      background: #ffffff;
+      padding-top: 24px;
+
+      .cardTitle {
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        margin-right: 24px;
+        margin-left: 24px;
+        padding-right: 1195px;
+        padding-bottom: 2px;
+        height: 16px;
+
+        .configuraciNDeReserv {
+          margin: -2px 0px 0px;
+          line-height: 16px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 16px;
+        }
+      }
+
+      .cardContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        margin-top: 30px;
+        padding: 0px 24px 24px;
+
+        .duraciNDeReservaTemp {
+          flex-shrink: 0;
+          align-self: stretch;
+          width: 1454px;
+          height: 14px;
+          line-height: 14px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+
+        .adminDashboard {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          row-gap: 8px;
+
+          .primitiveButton2 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            justify-content: space-between;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            background: #f9fafb;
+            padding-right: 11px;
+            padding-left: 11px;
+            height: 36px;
+
+            .a10Minutos {
+              flex-shrink: 0;
+              width: 69px;
+              height: 20px;
+              overflow: hidden;
+              text-align: center;
+              line-height: 20px;
+              letter-spacing: 0;
+              color: #1a1a2e;
+              font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+              font-size: 14px;
+            }
+          }
+
+          .tiempoQueSeReservaUn {
+            flex-shrink: 0;
+            align-self: stretch;
+            width: 1454px;
+            height: 20px;
+            line-height: 20px;
+            letter-spacing: 0;
+            color: #6b7280;
+            font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+            font-size: 14px;
+          }
+        }
+
+        .adminDashboard2 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-top: 24px;
+          row-gap: 8px;
+
+          .input {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            background: #f9fafb;
+            padding: 3px 11px;
+            height: 36px;
+            overflow: hidden;
+          }
+        }
+
+        .adminDashboard3 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-self: stretch;
+          margin-top: 24px;
+          row-gap: 8px;
+
+          .desactivarInscripcio {
+            flex-shrink: 0;
+            padding: 0px 0px 0px 21px;
+            width: 1454px;
+            height: 20px;
+            line-height: 20px;
+            letter-spacing: 0;
+            color: #6b7280;
+            font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+            font-size: 14px;
+          }
+        }
+
+        .button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          column-gap: 8px;
+          margin-top: 24px;
+          border-radius: 10px;
+          background: #179ae3;
+          padding: 8px 16px;
+          width: 175px;
+        }
+      }
+    }
+  }
+
+  .container4 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    border-color: #e5e7eb;
+    background: #ffffff;
+    padding-right: 207px;
+    padding-left: 207px;
+    width: 1918px;
+    height: 65px;
+
+    .container2 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      column-gap: 8px;
+      width: 152px;
+
+      .icon2 {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+      }
+
+      .text {
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-start;
+
+        .melodyLabs {
+          flex-shrink: 0;
+          line-height: 28px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .container3 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      column-gap: 12px;
+      width: 229px;
+
+      .button2 {
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 6px 14px 10px 12px;
+
+        .icon3 {
+          margin-top: 4px;
+          width: 16px;
+          height: 16px;
+          overflow: hidden;
+        }
+
+        .administradorDemo {
+          line-height: 20px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+      }
+
+      .button3 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  .chatbotWidget {
+    display: flex;
+    position: absolute;
+    top: 864px;
+    left: 1701px;
+    flex-shrink: 0;
+    align-items: center;
+    column-gap: 12px;
+    z-index: 1;
+    width: 193px;
+    height: 56px;
+
+    .text2 {
+      display: flex;
+      flex-grow: 1;
+      align-items: flex-start;
+      opacity: 0.95;
+      border-radius: 33554400px;
+      box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+      background: #1a1a2e;
+      padding: 11px 16px 0px;
+      height: 40px;
+    }
+
+    .button4 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 33554400px;
+      box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+      background: #179ae3;
+      width: 56px;
+      height: 56px;
+    }
+  }
+}
