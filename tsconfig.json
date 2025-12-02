@@ -31,6 +31,8 @@
   },
   "include": [
     "src",
-    "api"
-  ]
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": ["node_modules"] // <-- Añade esta línea para excluir node_modules de forma explícita
 }
