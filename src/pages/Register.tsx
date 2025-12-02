@@ -1,8 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useAuthMock, AuthUser } from "@/hooks/useAuthMock";
+import { getSupabase } from "@/lib/supabase/client";
 
 const registerSchema = z
   .object({
@@ -30,26 +31,32 @@ type RegisterForm = z.infer<typeof registerSchema>;
 
 export default function RegisterPage() {
   const navigate = useNavigate();
-  const { register: registerMock, loading, error } = useAuthMock();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<RegisterForm>({
-    resolver: zodResolver(registerSchema),
-    mode: "onBlur",
-  });
+  } = useForm<RegisterForm>({ resolver: zodResolver(registerSchema), mode: "onBlur" });
 
   const onSubmit = async (data: RegisterForm) => {
+    setError(null);
+    setLoading(true);
     try {
-      await registerMock({
-        name: data.name,
+      const supabase = getSupabase();
+      if (!supabase) throw new Error("Configuración de Supabase no encontrada");
+      const { error } = await supabase.auth.signUp({
         email: data.email,
-        role: data.role as AuthUser["role"],
         password: data.password,
+        options: { data: { name: data.name } },
       });
-      navigate("/login");
-    } catch {}
+      if (error) throw new Error(error.message);
+      navigate("/login?registered=1");
+    } catch (e: any) {
+      setError(e?.message ?? "Error");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -63,55 +70,37 @@ export default function RegisterPage() {
       </div>
 
       <div className="mx-4 mt-24 w-full max-w-md rounded-2xl border border-gray-200 bg-white shadow-xl px-8 py-10">
-        <h1 className="mt-6 text-center text-sm font-medium text-gray-900">
-          Crear Cuenta
-        </h1>
+        <h1 className="mt-6 text-center text-sm font-medium text-gray-900">Crear Cuenta</h1>
 
         <div className="mt-6">
           <div className="h-px w-full bg-gray-200" />
         </div>
 
-        <form
-          className="mt-6 space-y-5"
-          onSubmit={handleSubmit(onSubmit)}
-          noValidate
-        >
+        <form className="mt-6 space-y-5" onSubmit={handleSubmit(onSubmit)} noValidate>
           <div>
-            <label className="block text-sm text-gray-900">
-              Nombre Completo
-            </label>
+            <label className="block text-sm text-gray-900">Nombre Completo</label>
             <input
               type="text"
               className="mt-2 w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm"
               placeholder="Juan Pérez"
               {...register("name")}
             />
-            {errors.name && (
-              <p className="mt-1 text-xs text-red-600">{errors.name.message}</p>
-            )}
+            {errors.name && <p className="mt-1 text-xs text-red-600">{errors.name.message}</p>}
           </div>
 
           <div>
-            <label className="block text-sm text-gray-900">
-              Correo Electrónico
-            </label>
+            <label className="block text-sm text-gray-900">Correo Electrónico</label>
             <input
               type="email"
               className="mt-2 w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm"
               placeholder="tu@email.com"
               {...register("email")}
             />
-            {errors.email && (
-              <p className="mt-1 text-xs text-red-600">
-                {errors.email.message}
-              </p>
-            )}
+            {errors.email && <p className="mt-1 text-xs text-red-600">{errors.email.message}</p>}
           </div>
 
           <div>
-            <label className="block text-sm text-gray-900">
-              Tipo de Usuario
-            </label>
+            <label className="block text-sm text-gray-900">Tipo de Usuario</label>
             <select
               className="mt-2 w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm"
               {...register("role")}
@@ -120,11 +109,7 @@ export default function RegisterPage() {
               <option value="student">Estudiante</option>
               <option value="teacher">Profesor</option>
             </select>
-            {errors.role && (
-              <p className="mt-1 text-xs text-red-600">
-                {errors.role.message as string}
-              </p>
-            )}
+            {errors.role && <p className="mt-1 text-xs text-red-600">{errors.role.message as string}</p>}
           </div>
 
           <div>
@@ -135,50 +120,28 @@ export default function RegisterPage() {
               placeholder="Mínimo 6 caracteres"
               {...register("password")}
             />
-            {errors.password && (
-              <p className="mt-1 text-xs text-red-600">
-                {errors.password.message}
-              </p>
-            )}
+            {errors.password && <p className="mt-1 text-xs text-red-600">{errors.password.message}</p>}
           </div>
 
           <div>
-            <label className="block text-sm text-gray-900">
-              Confirmar Contraseña
-            </label>
+            <label className="block text-sm text-gray-900">Confirmar Contraseña</label>
             <input
               type="password"
               className="mt-2 w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2 text-sm"
               placeholder="Repite tu contraseña"
               {...register("confirm")}
             />
-            {errors.confirm && (
-              <p className="mt-1 text-xs text-red-600">
-                {errors.confirm.message}
-              </p>
-            )}
+            {errors.confirm && <p className="mt-1 text-xs text-red-600">{errors.confirm.message}</p>}
           </div>
 
           <label className="mt-1 flex items-start gap-2 text-sm text-gray-700">
-            <input
-              type="checkbox"
-              className="mt-1 h-4 w-4"
-              {...register("terms")}
-            />
-            <span>
-              Acepto la Política de Tratamiento de Datos (Ley Habeas Data)
-            </span>
+            <input type="checkbox" className="mt-1 h-4 w-4" {...register("terms")} />
+            <span>Acepto la Política de Tratamiento de Datos (Ley Habeas Data)</span>
           </label>
-          {errors.terms && (
-            <p className="text-xs text-red-600">
-              {errors.terms.message as string}
-            </p>
-          )}
+          {errors.terms && <p className="text-xs text-red-600">{errors.terms.message as string}</p>}
 
           {error && (
-            <div className="rounded-md bg-red-50 border border-red-200 text-red-700 text-sm px-3 py-2">
-              {error}
-            </div>
+            <div className="rounded-md bg-red-50 border border-red-200 text-red-700 text-sm px-3 py-2">{error}</div>
           )}
 
           <button
@@ -191,16 +154,10 @@ export default function RegisterPage() {
         </form>
 
         <div className="mt-6 text-center text-sm text-gray-600">
-          ¿Ya tienes una cuenta?{" "}
-          <Link to="/login" className="text-blue-600">
-            Inicia sesión aquí
-          </Link>
+          ¿Ya tienes una cuenta? <Link to="/login" className="text-blue-600">Inicia sesión aquí</Link>
         </div>
 
-        <p className="mt-6 text-center text-xs text-gray-500">
-          Al registrarte, aceptas nuestros Términos de Servicio y Política de
-          Privacidad
-        </p>
+        <p className="mt-6 text-center text-xs text-gray-500">Al registrarte, aceptas nuestros Términos de Servicio y Política de Privacidad</p>
       </div>
     </div>
   );

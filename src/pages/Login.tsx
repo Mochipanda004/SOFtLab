@@ -1,8 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useAuthMock } from "@/hooks/useAuthMock";
+import { getSupabase } from "@/lib/supabase/client";
 
 const loginSchema = z.object({
   email: z.string().email({ message: "Ingresa un correo válido" }),
@@ -13,7 +14,8 @@ type LoginForm = z.infer<typeof loginSchema>;
 
 export default function LoginPage() {
   const navigate = useNavigate();
-  const { login, loading, error } = useAuthMock();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const {
     register,
     handleSubmit,
@@ -21,11 +23,22 @@ export default function LoginPage() {
   } = useForm<LoginForm>({ resolver: zodResolver(loginSchema), mode: "onBlur" });
 
   const onSubmit = async (data: LoginForm) => {
+    setError(null);
+    setLoading(true);
     try {
-      const u = await login({ email: data.email, password: data.password });
-      if (u.role === "admin") navigate("/admin/dashboard");
-      else navigate("/");
-    } catch {}
+      const supabase = getSupabase();
+      if (!supabase) throw new Error("Configuración de Supabase no encontrada");
+      const { error } = await supabase.auth.signInWithPassword({
+        email: data.email,
+        password: data.password,
+      });
+      if (error) throw new Error(error.message);
+      navigate("/admin/dashboard");
+    } catch (e: any) {
+      setError(e?.message ?? "Error");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -104,4 +117,3 @@ export default function LoginPage() {
     </div>
   );
 }
-

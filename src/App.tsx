@@ -1,14 +1,9 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "@/app/page";
 import CursosCatalog from "@/app/cursos/page";
 import CursoDetailPage from "@/app/cursos/[id]/page";
-import LoginPage from "@/app/login/page";
-import RegisterPage from "@/app/register/page";
+import LoginPage from "@/pages/Login";
+import RegisterPage from "@/pages/Register";
 import AdminLayout from "@/components/admin/AdminLayout";
 import Dashboard from "@/pages/admin/Dashboard";
 import Courses from "@/pages/admin/Courses";
@@ -23,22 +18,11 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cursos" element={<CursosCatalog />} />
-        <Route path="/cursos/:id" element={<CursoDetailPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route
-          path="/other"
-          element={
-            <div className="text-center text-xl">Other Page - Coming Soon</div>
-          }
-        />
-
-        {/* Admin Routes */}
-        <Route
-          path="/admin"
-          element={<Navigate to="/admin/dashboard" replace />}
-        />
+        <Route path="/cursos" element={<CursosCatalog />} />
+        <Route path="/cursos/:id" element={<CursoDetailPage />} />
+        <Route path="/admin" element={<Navigate to="/admin/dashboard" replace />} />
         <Route
           path="/admin/*"
           element={
@@ -55,6 +39,7 @@ export default function App() {
             </AdminLayout>
           }
         />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );
