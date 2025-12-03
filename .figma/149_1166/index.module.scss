@@ -1,0 +1,677 @@
+* {
+  box-sizing: border-box;
+}
+
+.teacherDashboard8 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 97px 207px 0px;
+  width: 1918px;
+  height: 944px;
+  row-gap: 32px;
+
+  .icon3 {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+  }
+
+  .guardarAsistencia {
+    flex-shrink: 0;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #ffffff;
+    font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: flex-start;
+    align-self: stretch;
+    row-gap: 8px;
+
+    .heading1 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      padding-right: 1334px;
+      padding-bottom: 2px;
+      height: 24px;
+
+      .dashboardDelProfesor {
+        margin: -2px 0px 0px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #1a1a2e;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+    }
+
+    .paragraph {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      padding-right: 1158px;
+      padding-bottom: 2px;
+      height: 24px;
+
+      .gestionaTusClasesEst {
+        margin: -2px 0px 0px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #6b7280;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .primitiveDiv {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: flex-start;
+    align-self: stretch;
+    height: 512px;
+    row-gap: 32px;
+
+    .asistencia {
+      flex-shrink: 0;
+      line-height: 20px;
+      letter-spacing: 0;
+      color: #1a1a2e;
+      font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .tabList {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: #f3f4f6;
+      width: 1504px;
+      height: 36px;
+      overflow: hidden;
+
+      .resumen {
+        flex-grow: 1;
+        padding: 5px 8px;
+        width: 251px;
+        height: 29px;
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #1a1a2e;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+
+      .primitiveButton {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        column-gap: 6px;
+        border: 1px solid #00000000;
+        border-radius: 16px;
+        background: #ffffff;
+        padding: 3px 7px;
+        height: 29px;
+      }
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      align-items: flex-start;
+      align-self: stretch;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      background: #ffffff;
+      row-gap: 24px;
+
+      .cardHeader {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: center;
+        align-self: stretch;
+        padding: 24px 24px 0px;
+
+        .cardTitle {
+          display: flex;
+          align-items: flex-start;
+          align-self: stretch;
+          padding-right: 1225px;
+          padding-bottom: 2px;
+          height: 16px;
+
+          .tomarAsistenciaPiano {
+            margin: -2px 0px 0px;
+            line-height: 16px;
+            letter-spacing: 0;
+            color: #1a1a2e;
+            font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+            font-size: 16px;
+          }
+        }
+
+        .lunes18DeOctubre2025 {
+          margin: 6px 0px 0px;
+          width: 1454px;
+          height: 20px;
+          line-height: 20px;
+          letter-spacing: 0;
+          color: #6b7280;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+      }
+
+      .cardContent {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: flex-start;
+        align-self: stretch;
+        padding-right: 24px;
+        padding-left: 24px;
+        row-gap: 24px;
+
+        .table {
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          align-items: center;
+          align-self: stretch;
+          overflow: hidden;
+
+          .tableHeader {
+            display: flex;
+            align-items: center;
+            align-self: stretch;
+
+            .tableRow {
+              display: flex;
+              flex-grow: 1;
+              align-items: center;
+              justify-content: space-between;
+              border-width: 0px 0px 1px;
+              border-style: solid;
+              border-color: #e5e7eb;
+              width: 1454px;
+              min-width: 1454px;
+              height: 40px;
+
+              .estudiante {
+                padding: 8px 0px 12px 8px;
+                width: 550px;
+                height: 40px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+
+              .asistenciaTotal {
+                padding: 8px 0px 12px 8px;
+                width: 558px;
+                height: 40px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+
+              .presente {
+                padding: 8px 0px 12px;
+                width: 347px;
+                height: 40px;
+                text-align: center;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+          }
+
+          .tableBody {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: stretch;
+
+            .container2 {
+              flex-shrink: 0;
+              align-self: stretch;
+              border-radius: 33554400px;
+              background: #10b981;
+              height: 8px;
+            }
+
+            .juanEstudiante {
+              flex-shrink: 0;
+              align-self: stretch;
+              width: 534px;
+              height: 20px;
+              line-height: 20px;
+              letter-spacing: 0;
+              color: #1a1a2e;
+              font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+              font-size: 14px;
+            }
+
+            .text {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              width: 27px;
+              height: 20px;
+
+              .a92 {
+                margin: -2px 0px 0px;
+                width: 27px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+
+            .paragraph2 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              align-self: stretch;
+              padding-right: 458px;
+              height: 20px;
+
+              .a1213Clases {
+                margin: -2px 0px 0px;
+                width: 76px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+            }
+
+            .primitiveSpan {
+              display: flex;
+              flex-grow: 1;
+              align-items: center;
+              justify-content: center;
+              border: 1px solid #179ae3;
+              border-radius: 4px;
+              box-shadow: 0px 1px 2px 0px #0000000d;
+              background: #179ae3;
+
+              .icon {
+                flex-shrink: 0;
+                width: 14px;
+                height: 14px;
+                overflow: hidden;
+              }
+            }
+
+            .tableCell {
+              display: flex;
+              align-items: center;
+              padding: 21px 161px 21px 169px;
+            }
+
+            .teacherDashboard {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              padding: 9px 8px;
+            }
+
+            .tableRow2 {
+              display: flex;
+              align-items: center;
+              align-self: stretch;
+              justify-content: space-between;
+              border-width: 0px 0px 1px;
+              border-style: solid;
+              border-color: #e5e7eb;
+              min-width: 1454px;
+              height: 57px;
+
+              .teacherDashboard2 {
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                padding-right: 8px;
+                padding-left: 8px;
+                width: 558px;
+                height: 57px;
+
+                .container3 {
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                  align-items: flex-start;
+                  border-radius: 33554400px;
+                  background: #f3f4f6;
+                  padding-right: 39px;
+                }
+              }
+            }
+
+            .tableRow3 {
+              display: flex;
+              align-items: center;
+              align-self: stretch;
+              justify-content: space-between;
+              border-width: 0px 0px 1px;
+              border-style: solid;
+              border-color: #e5e7eb;
+              min-width: 1454px;
+              height: 57px;
+
+              .teacherDashboard3 {
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                padding-right: 8px;
+                padding-left: 8px;
+                width: 558px;
+                height: 57px;
+
+                .container4 {
+                  flex-grow: 1;
+                  border-radius: 33554400px;
+                  background: #10b981;
+                  height: 8px;
+                }
+
+                .text2 {
+                  display: flex;
+                  flex-shrink: 0;
+                  align-items: flex-start;
+                  width: 34px;
+                  height: 20px;
+
+                  .a100 {
+                    margin: -2px 0px 0px;
+                    width: 35px;
+                    line-height: 20px;
+                    letter-spacing: 0;
+                    color: #6b7280;
+                    font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+
+            .tableRow4 {
+              display: flex;
+              align-items: center;
+              align-self: stretch;
+              justify-content: space-between;
+              border-width: 0px 0px 1px;
+              border-style: solid;
+              border-color: #e5e7eb;
+              min-width: 1454px;
+              height: 57px;
+
+              .teacherDashboard4 {
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                padding-right: 8px;
+                padding-left: 8px;
+                width: 558px;
+                height: 57px;
+
+                .container5 {
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                  align-items: flex-start;
+                  border-radius: 33554400px;
+                  background: #f3f4f6;
+                  padding-right: 78px;
+                }
+              }
+
+              .tableCell2 {
+                display: flex;
+                align-items: center;
+                padding: 21px 161px 21px 169px;
+
+                .primitiveButton2 {
+                  border: 1px solid #e5e7eb;
+                  border-radius: 4px;
+                  box-shadow: 0px 1px 2px 0px #0000000d;
+                  background: #f9fafb;
+                  width: 16px;
+                  height: 16px;
+                }
+              }
+            }
+
+            .tableRow5 {
+              display: flex;
+              align-items: center;
+              align-self: stretch;
+              justify-content: space-between;
+              min-width: 1454px;
+              height: 57px;
+
+              .teacherDashboard5 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 9px 8px 8px;
+              }
+
+              .teacherDashboard6 {
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                padding-right: 8px;
+                padding-left: 8px;
+                width: 558px;
+                height: 57px;
+
+                .container6 {
+                  display: flex;
+                  flex-direction: column;
+                  flex-grow: 1;
+                  align-items: flex-start;
+                  border-radius: 33554400px;
+                  background: #f3f4f6;
+                  padding-right: 117px;
+                }
+              }
+
+              .tableCell3 {
+                display: flex;
+                align-items: center;
+                padding: 21px 161px 20px 169px;
+              }
+            }
+          }
+        }
+
+        .teacherDashboard7 {
+          display: flex;
+          flex-shrink: 0;
+          align-items: flex-start;
+          align-self: stretch;
+          column-gap: 12px;
+
+          .button {
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: center;
+            column-gap: 8px;
+            border-radius: 10px;
+            background: #179ae3;
+            padding: 8px 16px;
+          }
+
+          .button2 {
+            display: flex;
+            flex-grow: 1;
+            align-items: center;
+            justify-content: center;
+            column-gap: 8px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            background: #ffffff;
+            padding: 7px 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .container9 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    border-color: #e5e7eb;
+    background: #ffffff;
+    padding-right: 207px;
+    padding-left: 207px;
+    width: 1918px;
+    height: 65px;
+
+    .container7 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      column-gap: 8px;
+      width: 152px;
+
+      .icon2 {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+      }
+
+      .text3 {
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-start;
+
+        .melodyLabs {
+          flex-shrink: 0;
+          line-height: 28px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .container8 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      column-gap: 12px;
+      width: 191px;
+
+      .button3 {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        column-gap: 8px;
+        border-radius: 10px;
+        height: 36px;
+
+        .profesorDemo {
+          flex-shrink: 0;
+          width: 95px;
+          height: 20px;
+          text-align: center;
+          line-height: 20px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+      }
+
+      .button4 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+
+  .chatbotWidget {
+    display: flex;
+    position: absolute;
+    top: 864px;
+    left: 1701px;
+    flex-shrink: 0;
+    align-items: center;
+    column-gap: 12px;
+    z-index: 1;
+    width: 193px;
+    height: 56px;
+
+    .text4 {
+      display: flex;
+      flex-grow: 1;
+      align-items: flex-start;
+      opacity: 0.7;
+      border-radius: 33554400px;
+      box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+      background: #1a1a2e;
+      padding: 11px 16px 0px;
+      height: 40px;
+    }
+
+    .button5 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 33554400px;
+      box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+      background: #179ae3;
+      width: 56px;
+      height: 56px;
+    }
+  }
+}

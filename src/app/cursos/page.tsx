@@ -1,10 +1,23 @@
 import PublicNavbar from "@/components/PublicNavbar";
 import PublicFooter from "@/components/PublicFooter";
 import PublicCourseCard from "@/components/PublicCourseCard";
-import { featuredCourses } from "@/mock/courses";
+import { useEffect, useState } from "react";
+import { fetchCourses } from "@/lib/courses";
 import { Link } from "react-router-dom";
 
 export default function CursosCatalog() {
+  const [courses, setCourses] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    (async () => {
+      try {
+        const data = await fetchCourses();
+        setCourses(data);
+      } finally {
+        setLoading(false);
+      }
+    })();
+  }, []);
   return (
     <div className="min-h-screen bg-white">
       {/* Top bar */}
@@ -50,11 +63,11 @@ export default function CursosCatalog() {
           </select>
         </div>
 
-        <p className="mt-3 text-sm text-gray-500">Mostrando 6 de 6 cursos</p>
+        <p className="mt-3 text-sm text-gray-500">{loading ? "Cargando cursos..." : `Mostrando ${courses.length} curso(s)`}</p>
 
         {/* Grid */}
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredCourses.map((c) => (
+          {(loading ? [] : courses).map((c) => (
             <PublicCourseCard key={c.id} c={c} />
           ))}
         </div>

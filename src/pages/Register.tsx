@@ -45,15 +45,21 @@ export default function RegisterPage() {
     try {
       const supabase = getSupabase();
       if (!supabase) throw new Error("Configuración de Supabase no encontrada");
-      const { error } = await supabase.auth.signUp({
+      const attempt = async () => supabase.auth.signUp({
         email: data.email,
         password: data.password,
         options: { data: { name: data.name } },
       });
-      if (error) throw new Error(error.message);
+      let { error } = await attempt();
+      if (error && /rate limit/i.test(error.message || "")) {
+        // reintento simple con espera corta
+        await new Promise((r) => setTimeout(r, 3000));
+        ({ error } = await attempt());
+      }
+      if (error) return setError(error.message || "Error de registro");
       navigate("/login?registered=1");
     } catch (e: any) {
-      setError(e?.message ?? "Error");
+      setError(e?.message ?? "Error de registro");
     } finally {
       setLoading(false);
     }

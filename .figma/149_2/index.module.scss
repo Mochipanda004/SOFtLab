@@ -1,0 +1,1151 @@
+* {
+  box-sizing: border-box;
+}
+
+.studentDashboard12 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 97px 200px 0px;
+  width: 1903px;
+  height: 1127px;
+  row-gap: 32px;
+
+  .icon7 {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+  }
+
+  .verCatLogo {
+    flex-shrink: 0;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #ffffff;
+    font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .miDashboard {
+    margin: -2px 0px 0px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #1a1a2e;
+    font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: flex-start;
+    align-self: stretch;
+    row-gap: 8px;
+
+    .heading1 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      padding-right: 1404px;
+      padding-bottom: 2px;
+      height: 24px;
+    }
+
+    .paragraph {
+      display: flex;
+      flex-shrink: 0;
+      align-items: flex-start;
+      align-self: stretch;
+      padding-right: 961px;
+      height: 24px;
+
+      .bienvenidoDeVueltaEs {
+        margin: -2px 0px 0px;
+        width: 543px;
+        line-height: 24px;
+        letter-spacing: 0;
+        color: #6b7280;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .primitiveDiv5 {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: flex-start;
+    align-self: stretch;
+    height: 910px;
+    row-gap: 32px;
+
+    .tabList {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: #f3f4f6;
+      width: 1504px;
+      height: 36px;
+      overflow: hidden;
+
+      .primitiveButton {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        column-gap: 6px;
+        border: 1px solid #00000000;
+        border-radius: 16px;
+        background: #ffffff;
+        padding: 3px 7px;
+        height: 29px;
+
+        .resumen {
+          flex-shrink: 0;
+          line-height: 20px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+      }
+
+      .horario {
+        flex-grow: 1;
+        padding: 5px 8px;
+        width: 251px;
+        height: 29px;
+        text-align: center;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #1a1a2e;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+    }
+
+    .tabPanel {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      align-items: flex-start;
+      align-self: stretch;
+      row-gap: 24px;
+
+      .studentDashboard5 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+        height: 106px;
+
+        .icon {
+          flex-shrink: 0;
+          width: 24px;
+          height: 24px;
+          overflow: hidden;
+        }
+
+        .container2 {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          align-items: flex-start;
+          row-gap: 4px;
+
+          .cursosActivos {
+            flex-shrink: 0;
+            align-self: stretch;
+            width: 260px;
+            height: 20px;
+            line-height: 20px;
+            letter-spacing: 0;
+            color: #6b7280;
+            font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+            font-size: 14px;
+          }
+
+          .a1 {
+            flex-shrink: 0;
+            align-self: stretch;
+            width: 260px;
+            height: 32px;
+            line-height: 32px;
+            letter-spacing: 0;
+            color: #1a1a2e;
+            font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+            font-size: 24px;
+          }
+        }
+
+        .studentDashboard {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #e5e7eb;
+          border-radius: 16px;
+          background: #ffffff;
+          padding: 23px 24px;
+          width: 358px;
+          min-width: 358px;
+          height: 106px;
+
+          .container3 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            border-radius: 33554400px;
+            background: #179ae31a;
+            width: 48px;
+            height: 48px;
+          }
+        }
+
+        .studentDashboard2 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #e5e7eb;
+          border-radius: 16px;
+          background: #ffffff;
+          padding: 23px 24px;
+          width: 358px;
+          min-width: 358px;
+          height: 106px;
+
+          .container4 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            border-radius: 33554400px;
+            background: #10b9811a;
+            width: 48px;
+            height: 48px;
+          }
+        }
+
+        .studentDashboard3 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #e5e7eb;
+          border-radius: 16px;
+          background: #ffffff;
+          padding: 23px 24px;
+          width: 358px;
+          min-width: 358px;
+          height: 106px;
+
+          .container5 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            border-radius: 33554400px;
+            background: #f59e0b1a;
+            width: 48px;
+            height: 48px;
+          }
+        }
+
+        .studentDashboard4 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #e5e7eb;
+          border-radius: 16px;
+          background: #ffffff;
+          padding: 23px 24px;
+          width: 358px;
+          min-width: 358px;
+          height: 106px;
+
+          .container6 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            border-radius: 33554400px;
+            background: #971bde1a;
+            width: 48px;
+            height: 48px;
+          }
+        }
+      }
+
+      .studentDashboard6 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        align-self: stretch;
+        justify-content: space-between;
+        border: 2px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 22px 24px;
+        min-width: 1504px;
+        height: 108px;
+        background-image: linear-gradient(90deg, #179ae30d 0%, #971bde0d 100%);
+
+        .container9 {
+          display: flex;
+          flex-grow: 1;
+          align-items: center;
+          column-gap: 16px;
+
+          .container7 {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            border-radius: 33554400px;
+            width: 56px;
+            height: 56px;
+            background-image: linear-gradient(180deg, #179ae3 0%, #971bde 100%);
+
+            .icon2 {
+              flex-shrink: 0;
+              width: 28px;
+              height: 28px;
+              overflow: hidden;
+            }
+          }
+
+          .container8 {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            align-items: flex-start;
+            row-gap: 4px;
+
+            .heading3 {
+              display: flex;
+              flex-shrink: 0;
+              align-items: flex-start;
+              align-self: stretch;
+              padding-right: 1096px;
+              padding-bottom: 2px;
+              height: 24px;
+            }
+
+            .descubreTodosLosCurs {
+              flex-shrink: 0;
+              align-self: stretch;
+              width: 1268px;
+              height: 20px;
+              line-height: 20px;
+              letter-spacing: 0;
+              color: #6b7280;
+              font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .button {
+          display: flex;
+          flex-shrink: 0;
+          align-items: center;
+          justify-content: center;
+          column-gap: 8px;
+          border-radius: 10px;
+          padding: 8px 16px;
+          width: 112px;
+          background-image: linear-gradient(180deg, #179ae3 0%, #971bde 100%);
+        }
+      }
+
+      .studentDashboard11 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: space-between;
+
+        .prXimasClases {
+          margin: -2px 0px 0px;
+          line-height: 16px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 16px;
+        }
+
+        .container15 {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          row-gap: 24px;
+
+          .card {
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            background: #ffffff;
+            padding-top: 24px;
+
+            .cardTitle {
+              display: flex;
+              align-items: flex-start;
+              align-self: stretch;
+              margin-right: 24px;
+              margin-left: 24px;
+              padding-right: 824px;
+              padding-bottom: 2px;
+              height: 16px;
+            }
+
+            .cardContent {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              align-self: stretch;
+              margin-top: 30px;
+              padding-right: 24px;
+              padding-left: 24px;
+              height: 188px;
+              row-gap: 12px;
+
+              .lunes1800 {
+                flex-shrink: 0;
+                line-height: 16px;
+                letter-spacing: 0;
+                color: #1a1a2e;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 12px;
+              }
+
+              .profMarAGonzLezSala1 {
+                margin: -2px 0px 0px;
+                width: 193px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+
+              .container10 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: center;
+                justify-content: center;
+                border-radius: 33554400px;
+                background: #179ae31a;
+                width: 40px;
+                height: 40px;
+
+                .icon3 {
+                  flex-shrink: 0;
+                  width: 20px;
+                  height: 20px;
+                  overflow: hidden;
+                }
+              }
+
+              .studentDashboard7 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-radius: 12px;
+                background: #f3f4f680;
+                padding-right: 16px;
+                padding-left: 16px;
+                height: 76px;
+
+                .container12 {
+                  display: flex;
+                  flex-grow: 1;
+                  align-items: center;
+                  column-gap: 12px;
+
+                  .container11 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    align-items: flex-start;
+
+                    .paragraph2 {
+                      display: flex;
+                      flex-shrink: 0;
+                      align-items: flex-start;
+                      align-self: stretch;
+                      padding-right: 686px;
+                      padding-bottom: 2px;
+                      height: 24px;
+                      overflow: hidden;
+                    }
+
+                    .paragraph3 {
+                      display: flex;
+                      flex-shrink: 0;
+                      align-items: flex-start;
+                      align-self: stretch;
+                      padding-right: 587px;
+                      height: 20px;
+                      overflow: hidden;
+                    }
+                  }
+                }
+
+                .badge {
+                  display: flex;
+                  flex-shrink: 0;
+                  align-items: center;
+                  justify-content: center;
+                  column-gap: 4px;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 10px;
+                  padding: 1px 7px;
+                  width: 80px;
+                  height: 22px;
+                  overflow: hidden;
+                }
+              }
+
+              .studentDashboard8 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: center;
+                align-self: stretch;
+                justify-content: space-between;
+                border-radius: 12px;
+                background: #f3f4f680;
+                padding-right: 16px;
+                padding-left: 16px;
+                height: 76px;
+
+                .container14 {
+                  display: flex;
+                  flex-grow: 1;
+                  align-items: center;
+                  column-gap: 12px;
+
+                  .container13 {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    align-items: flex-start;
+
+                    .paragraph4 {
+                      display: flex;
+                      flex-shrink: 0;
+                      align-items: flex-start;
+                      align-self: stretch;
+                      padding-right: 665px;
+                      padding-bottom: 2px;
+                      height: 24px;
+                      overflow: hidden;
+                    }
+
+                    .paragraph5 {
+                      display: flex;
+                      flex-shrink: 0;
+                      align-items: flex-start;
+                      align-self: stretch;
+                      padding-right: 566px;
+                      height: 20px;
+                      overflow: hidden;
+                    }
+                  }
+                }
+
+                .badge2 {
+                  display: flex;
+                  flex-shrink: 0;
+                  align-items: center;
+                  justify-content: center;
+                  column-gap: 4px;
+                  border: 1px solid #e5e7eb;
+                  border-radius: 10px;
+                  padding: 1px 7px;
+                  width: 101px;
+                  height: 22px;
+                  overflow: hidden;
+                }
+              }
+            }
+          }
+
+          .card2 {
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            align-items: center;
+            align-self: stretch;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            background: #ffffff;
+            padding-top: 24px;
+
+            .cardTitle2 {
+              display: flex;
+              align-items: flex-start;
+              align-self: stretch;
+              margin-right: 24px;
+              margin-left: 24px;
+              padding-right: 845px;
+              padding-bottom: 2px;
+              height: 16px;
+            }
+
+            .cardContent2 {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              align-self: stretch;
+              margin-top: 30px;
+              padding-right: 24px;
+              padding-left: 24px;
+              height: 224px;
+              row-gap: 12px;
+
+              .aFechaLMite25DeOctub {
+                margin: 2px 0px 0px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+
+              .quizTeorAMusical1 {
+                flex-shrink: 0;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+              }
+
+              .nuevaEvaluaciNDispon {
+                margin: -2px 0px 0px;
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #6b7280;
+                font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                font-size: 14px;
+              }
+
+              .icon4 {
+                margin-top: 2px;
+                width: 16px;
+                height: 16px;
+                overflow: hidden;
+              }
+
+              .alert {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                justify-content: space-between;
+                border: 1px solid #e5e7eb;
+                border-radius: 12px;
+                background: #ffffff;
+                padding: 12px 16px;
+
+                .alertDescription {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding-right: 700px;
+                  padding-bottom: 2px;
+                  height: 68px;
+
+                  .studentDashboard9 {
+                    display: flex;
+                    align-items: flex-start;
+                    margin-top: 6px;
+                    width: 149px;
+                  }
+                }
+              }
+
+              .alert2 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                justify-content: space-between;
+                border: 1px solid #e5e7eb;
+                border-radius: 12px;
+                background: #ffffff;
+                padding: 12px 16px;
+
+                .alertDescription2 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding-right: 689px;
+                  padding-bottom: 2px;
+                  height: 68px;
+
+                  .studentDashboard10 {
+                    display: flex;
+                    align-items: flex-start;
+                    margin-top: 6px;
+                    width: 180px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .card3 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 1px solid #e5e7eb;
+          border-radius: 16px;
+          background: #ffffff;
+          padding-top: 24px;
+
+          .cardTitle3 {
+            display: flex;
+            align-items: flex-start;
+            align-self: stretch;
+            margin-right: 24px;
+            margin-left: 24px;
+            padding-right: 348px;
+            padding-bottom: 2px;
+            height: 16px;
+          }
+
+          .cardContent3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: stretch;
+            margin-top: 54px;
+            padding: 40px 24px 24px;
+
+            .radialProgress {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              align-self: stretch;
+              margin-right: 158px;
+              margin-left: 158px;
+
+              .container16 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-self: stretch;
+                padding-bottom: 44px;
+                padding-left: 1px;
+                height: 120px;
+
+                .icon5 {
+                  position: relative;
+                  margin-top: -120px;
+                  width: 120px;
+                  height: 120px;
+                  overflow: hidden;
+                  rotate: -90deg;
+
+                  .vector {
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    border-radius: 50%;
+                    width: 110px;
+                    height: 110px;
+                  }
+                }
+
+                .text {
+                  display: flex;
+                  align-items: flex-start;
+                  margin-top: 44px;
+                  width: 46px;
+                  height: 32px;
+
+                  .a45 {
+                    margin: -2px 0px 0px;
+                    width: 46px;
+                    line-height: 32px;
+                    letter-spacing: 0;
+                    color: #1a1a2e;
+                    font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                    font-size: 24px;
+                  }
+                }
+              }
+
+              .paragraph6 {
+                display: flex;
+                align-items: flex-start;
+                margin-top: 8px;
+                width: 107px;
+
+                .progresoGeneral {
+                  flex-shrink: 0;
+                  line-height: 20px;
+                  letter-spacing: 0;
+                  color: #6b7280;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 14px;
+                }
+              }
+            }
+
+            .progressWidget {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              align-self: stretch;
+              margin-top: 40px;
+              row-gap: 16px;
+
+              .container18 {
+                flex-shrink: 0;
+                align-self: stretch;
+                background: #179ae3;
+                height: 8px;
+              }
+
+              .text2 {
+                display: flex;
+                flex-shrink: 0;
+                align-items: flex-start;
+                width: 27px;
+                height: 20px;
+
+                .a92 {
+                  margin: -2px 0px 0px;
+                  width: 27px;
+                  line-height: 20px;
+                  letter-spacing: 0;
+                  color: #6b7280;
+                  font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                  font-size: 14px;
+                }
+              }
+
+              .progressItem {
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                row-gap: 8px;
+
+                .container17 {
+                  display: flex;
+                  flex-shrink: 0;
+                  align-items: flex-start;
+                  align-self: stretch;
+                  justify-content: space-between;
+                  height: 20px;
+
+                  .asistencia {
+                    flex-shrink: 0;
+                    padding: 0px 5px 0px 0px;
+                    width: 69px;
+                    height: 20px;
+                    overflow: hidden;
+                    text-align: right;
+                    line-height: 20px;
+                    letter-spacing: 0;
+                    color: #1a1a2e;
+                    font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                    font-size: 14px;
+                  }
+                }
+
+                .primitiveDiv {
+                  display: flex;
+                  flex-direction: column;
+                  flex-shrink: 0;
+                  align-items: flex-start;
+                  align-self: stretch;
+                  border-radius: 33554400px;
+                  background: #179ae333;
+                  padding-right: 35px;
+                  overflow: hidden;
+                }
+              }
+
+              .progressItem2 {
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                row-gap: 8px;
+
+                .container19 {
+                  display: flex;
+                  flex-shrink: 0;
+                  align-items: flex-start;
+                  align-self: stretch;
+                  justify-content: space-between;
+                  height: 20px;
+
+                  .evaluaciones {
+                    flex-shrink: 0;
+                    padding: 0px 3px 0px 0px;
+                    width: 87px;
+                    height: 20px;
+                    overflow: hidden;
+                    text-align: right;
+                    line-height: 20px;
+                    letter-spacing: 0;
+                    color: #1a1a2e;
+                    font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                    font-size: 14px;
+                  }
+                }
+
+                .primitiveDiv2 {
+                  display: flex;
+                  flex-direction: column;
+                  flex-shrink: 0;
+                  align-items: flex-start;
+                  align-self: stretch;
+                  border-radius: 33554400px;
+                  background: #179ae333;
+                  padding-right: 109px;
+                  overflow: hidden;
+                }
+              }
+
+              .progressItem3 {
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                row-gap: 8px;
+
+                .container20 {
+                  display: flex;
+                  flex-shrink: 0;
+                  align-items: flex-start;
+                  align-self: stretch;
+                  justify-content: space-between;
+                  height: 20px;
+
+                  .materialesCompletado {
+                    flex-shrink: 0;
+                    padding: 0px 8px 0px 0px;
+                    width: 156px;
+                    height: 20px;
+                    overflow: hidden;
+                    text-align: center;
+                    line-height: 20px;
+                    letter-spacing: 0;
+                    color: #1a1a2e;
+                    font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                    font-size: 14px;
+                  }
+                }
+
+                .primitiveDiv3 {
+                  display: flex;
+                  flex-direction: column;
+                  flex-shrink: 0;
+                  align-items: flex-start;
+                  align-self: stretch;
+                  border-radius: 33554400px;
+                  background: #179ae333;
+                  padding-right: 174px;
+                  overflow: hidden;
+                }
+              }
+
+              .progressItem4 {
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                align-items: flex-start;
+                align-self: stretch;
+                row-gap: 8px;
+
+                .container21 {
+                  display: flex;
+                  flex-shrink: 0;
+                  align-items: flex-start;
+                  align-self: stretch;
+                  justify-content: space-between;
+                  height: 20px;
+
+                  .prCticasEntregadas {
+                    flex-shrink: 0;
+                    padding: 0px 3px 0px 0px;
+                    width: 135px;
+                    height: 20px;
+                    overflow: hidden;
+                    text-align: right;
+                    line-height: 20px;
+                    letter-spacing: 0;
+                    color: #1a1a2e;
+                    font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+                    font-size: 14px;
+                  }
+                }
+
+                .primitiveDiv4 {
+                  display: flex;
+                  flex-direction: column;
+                  flex-shrink: 0;
+                  align-items: flex-start;
+                  align-self: stretch;
+                  border-radius: 33554400px;
+                  background: #179ae333;
+                  padding-right: 196px;
+                  overflow: hidden;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container24 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    border-color: #e5e7eb;
+    background: #ffffff;
+    padding-right: 200px;
+    padding-left: 200px;
+    width: 1903px;
+    height: 65px;
+
+    .container22 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      column-gap: 8px;
+      width: 152px;
+
+      .icon6 {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+      }
+
+      .text3 {
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-start;
+
+        .melodyLabs {
+          flex-shrink: 0;
+          line-height: 28px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .container23 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      column-gap: 12px;
+      width: 253px;
+
+      .button2 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        width: 36px;
+        height: 36px;
+      }
+
+      .button3 {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        column-gap: 8px;
+        border-radius: 10px;
+        height: 36px;
+
+        .estudianteDemo {
+          flex-shrink: 0;
+          width: 109px;
+          height: 20px;
+          text-align: center;
+          line-height: 20px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .chatbotWidget {
+    display: flex;
+    position: absolute;
+    top: 864px;
+    left: 1686px;
+    flex-shrink: 0;
+    align-items: center;
+    column-gap: 12px;
+    z-index: 1;
+    width: 193px;
+    height: 56px;
+
+    .text4 {
+      display: flex;
+      flex-grow: 1;
+      align-items: flex-start;
+      opacity: 0.83;
+      border-radius: 33554400px;
+      box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+      background: #1a1a2e;
+      padding: 11px 16px 0px;
+      height: 40px;
+    }
+
+    .button4 {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 33554400px;
+      box-shadow: 0px 10px 15px -3px #0000001a, 0px 4px 6px -4px #0000001a;
+      background: #179ae3;
+      width: 56px;
+      height: 56px;
+    }
+  }
+}

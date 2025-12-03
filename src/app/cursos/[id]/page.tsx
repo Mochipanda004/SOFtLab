@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
-import { featuredCourses } from "@/mock/courses";
+import { useEffect, useState } from "react";
+import { fetchCourseById, enrollInCourse, joinWaitlist } from "@/lib/courses";
 
 function formatCOP(n: number) {
   return new Intl.NumberFormat("es-CO", { style: "currency", currency: "COP", maximumFractionDigits: 0 }).format(n);
@@ -7,7 +8,31 @@ function formatCOP(n: number) {
 
 export default function CursoDetailPage() {
   const { id } = useParams<{ id: string }>();
-  const course = featuredCourses.find((c) => c.id === id);
+  const [course, setCourse] = useState<any | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [err, setErr] = useState<string | null>(null);
+  useEffect(() => {
+    (async () => {
+      try {
+        if (!id) return;
+        const data = await fetchCourseById(id);
+        setCourse(data);
+        if (!data) setErr("Curso no encontrado");
+      } catch (e: any) {
+        setErr(e?.message ?? "Error cargando curso");
+      } finally {
+        setLoading(false);
+      }
+    })();
+  }, [id]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-8 text-center">Cargando...</div>
+      </div>
+    );
+  }
 
   if (!course) {
     return (
@@ -22,7 +47,7 @@ export default function CursoDetailPage() {
             </div>
             <Link to="/cursos" className="text-sm text-blue-600">Volver al catálogo</Link>
           </div>
-          <div className="mt-12 text-center text-gray-700">Curso no encontrado.</div>
+          <div className="mt-12 text-center text-gray-700">{err ?? "Curso no encontrado."}</div>
         </div>
       </div>
     );
@@ -141,11 +166,35 @@ export default function CursoDetailPage() {
               <div className="flex items-center gap-2"><span>📦</span><span>Materiales</span><span className="ml-auto text-gray-600">{course.materialsIncluded ?? 0} recursos incluidos</span></div>
             </div>
             {course.available ? (
-              <button className="mt-6 w-full rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white">Inscribirse ahora</button>
+              <button
+                className="mt-6 w-full rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white"
+                onClick={async () => {
+                  try {
+                    await enrollInCourse(course.id);
+                    alert("Inscripción realizada");
+                  } catch (e: any) {
+                    alert(e?.message ?? "Error de inscripción");
+                  }
+                }}
+              >
+                Inscribirse ahora
+              </button>
             ) : (
               <div className="mt-6 grid grid-cols-1 gap-3">
                 <div className="w-full rounded-lg bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700 text-center">Cupos agotados</div>
-                <button className="w-full rounded-lg bg-purple-600 px-4 py-2 text-sm font-medium text-white">Unirme a lista de espera</button>
+                <button
+                  className="w-full rounded-lg bg-purple-600 px-4 py-2 text-sm font-medium text-white"
+                  onClick={async () => {
+                    try {
+                      await joinWaitlist(course.id);
+                      alert("Añadido a lista de espera");
+                    } catch (e: any) {
+                      alert(e?.message ?? "Error al unirse a lista de espera");
+                    }
+                  }}
+                >
+                  Unirme a lista de espera
+                </button>
               </div>
             )}
             <p className="mt-2 text-center text-xs text-gray-500">Al inscribirte, aceptas nuestros términos y condiciones</p>

@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { getUserRole } from "@/lib/auth";
+import { getSupabase } from "@/lib/supabase/client";
 import {
   BarChart3,
   BookOpen,
@@ -35,6 +37,32 @@ const navigation = [
 export default function AdminLayout({ children }: AdminLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+  const [checking, setChecking] = useState(true);
+  const [denied, setDenied] = useState(false);
+
+  useEffect(() => {
+    (async () => {
+      const role = await getUserRole();
+      if (role !== "admin") setDenied(true);
+      setChecking(false);
+    })();
+  }, [navigate]);
+
+  if (checking) {
+    return <div className="min-h-screen flex items-center justify-center text-sm text-gray-600">Cargando...</div>;
+  }
+
+  if (denied) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center space-y-2">
+          <div className="text-lg font-semibold">Acceso restringido</div>
+          <Link to="/login" className="text-blue-600 text-sm">Ir a iniciar sesión</Link>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -131,9 +159,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
           </button>
 
           <div className="flex flex-1 items-center justify-end gap-x-4">
-            <button className="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500">
-              <Bell className="h-6 w-6" />
-            </button>
+            
             <div className="flex items-center gap-x-2">
               <div className="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center">
                 <User className="h-5 w-5 text-blue-600" />
@@ -141,6 +167,17 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
               <span className="text-sm font-medium text-gray-700">
                 Administrador
               </span>
+              <button
+                onClick={async () => {
+                  const supabase = getSupabase();
+                  if (!supabase) return;
+                  await supabase.auth.signOut();
+                  navigate("/login", { replace: true });
+                }}
+                className="text-sm text-gray-500 hover:text-gray-900"
+              >
+                Salir
+              </button>
             </div>
           </div>
         </div>

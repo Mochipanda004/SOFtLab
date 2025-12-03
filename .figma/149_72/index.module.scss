@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+.studentDashboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 22px 24px;
+  width: 1504px;
+  height: 108px;
+  background-image: linear-gradient(90deg, #179ae30d 0%, #971bde0d 100%);
+
+  .container3 {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    column-gap: 16px;
+
+    .container {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border-radius: 33554400px;
+      width: 56px;
+      height: 56px;
+      background-image: linear-gradient(180deg, #179ae3 0%, #971bde 100%);
+
+      .icon {
+        flex-shrink: 0;
+        width: 28px;
+        height: 28px;
+        overflow: hidden;
+      }
+    }
+
+    .container2 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      align-items: flex-start;
+      row-gap: 4px;
+
+      .heading3 {
+        display: flex;
+        flex-shrink: 0;
+        align-items: flex-start;
+        align-self: stretch;
+        padding-right: 1096px;
+        padding-bottom: 2px;
+        height: 24px;
+
+        .exploraNuestrosCurso {
+          margin: -2px 0px 0px;
+          line-height: 24px;
+          letter-spacing: 0;
+          color: #1a1a2e;
+          font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+          font-size: 16px;
+        }
+      }
+
+      .descubreTodosLosCurs {
+        flex-shrink: 0;
+        align-self: stretch;
+        width: 1268px;
+        height: 20px;
+        line-height: 20px;
+        letter-spacing: 0;
+        color: #6b7280;
+        font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .button {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    border-radius: 10px;
+    padding: 8px 16px;
+    width: 112px;
+    background-image: linear-gradient(180deg, #179ae3 0%, #971bde 100%);
+
+    .verCatLogo {
+      flex-shrink: 0;
+      line-height: 20px;
+      letter-spacing: 0;
+      color: #ffffff;
+      font-family: Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimHei, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+  }
+}
