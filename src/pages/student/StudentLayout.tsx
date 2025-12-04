@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { getSupabase } from "@/lib/supabase/client";
+import ChatbotWidget from "@/components/ChatbotWidget";
 import { getCurrentUser, getProfileByUserId } from "@/lib/auth";
 
 export default function StudentLayout({ children }: { children: React.ReactNode }) {
@@ -87,7 +88,9 @@ export default function StudentLayout({ children }: { children: React.ReactNode 
         <div className="mt-8">
           {children}
         </div>
+        <div></div>
       </main>
+      <ChatbotWidget />
     </div>
   );
 }

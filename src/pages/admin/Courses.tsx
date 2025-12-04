@@ -1,22 +1,33 @@
-import React from "react";
+import React, { useMemo, useState } from "react";
 import { BookOpen, Plus, Search, Filter } from "lucide-react";
-import { mockCourses } from "../../mocks/admin-data";
+import { AdminStore, Course, CourseLevel, uid } from "@/lib/adminStore";
 
 export default function Courses() {
-  const courses = mockCourses;
+  const [courses, setCourses] = useState<Course[]>(() => AdminStore.getCourses());
+  const teachers = AdminStore.getTeachers();
+  const instruments = AdminStore.getInstruments();
+  const resources = AdminStore.getRooms().map((r) => r.name).concat(AdminStore.getInstruments().map((i) => i.name));
+  const [form, setForm] = useState<{ name: string; level: CourseLevel; requisitos: string; objetivos: string; duracionMeses: number; instrumento: string; recursosNecesarios: string; teacherId?: string; maxCapacity: number }>({ name: "", level: "Básico", requisitos: "", objetivos: "", duracionMeses: 3, instrumento: instruments[0]?.name || "", recursosNecesarios: "", teacherId: teachers[0]?.id, maxCapacity: 12 });
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const saveCourses = (list: Course[]) => { setCourses(list); AdminStore.saveCourses(list); };
 
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case "Lleno":
-        return "bg-red-100 text-red-800";
-      case "Activo":
-        return "bg-green-100 text-green-800";
-      case "Inactivo":
-        return "bg-gray-100 text-gray-800";
-      default:
-        return "bg-gray-100 text-gray-800";
-    }
+  const createCourse = () => {
+    const e: Record<string, string> = {};
+    if (!form.name.trim()) e.name = "Nombre requerido";
+    if (!form.instrumento.trim()) e.inst = "Instrumento requerido";
+    setErrors(e);
+    if (Object.keys(e).length) return;
+    const requisitos = form.requisitos ? form.requisitos.split(",").map((s) => s.trim()).filter(Boolean) : [];
+    const objetivos = form.objetivos ? form.objetivos.split(",").map((s) => s.trim()).filter(Boolean) : [];
+    const recursosNecesarios = form.recursosNecesarios ? form.recursosNecesarios.split(",").map((s) => s.trim()).filter(Boolean) : [];
+    const c: Course = { id: uid("crs"), name: form.name.trim(), level: form.level, requisitos, objetivos, duracionMeses: form.duracionMeses, instrumento: form.instrumento.trim(), recursosNecesarios, teacherId: form.teacherId, maxCapacity: form.maxCapacity, enrolledStudentIds: [] };
+    saveCourses([c, ...courses]);
+    setForm({ name: "", level: form.level, requisitos: "", objetivos: "", duracionMeses: 3, instrumento: instruments[0]?.name || "", recursosNecesarios: "", teacherId: teachers[0]?.id, maxCapacity: 12 });
   };
+  const deleteCourse = (id: string) => { if (!window.confirm("¿Eliminar curso?")) return; saveCourses(courses.filter((c) => c.id !== id)); };
+  const enrolledCount = (c: Course) => c.enrolledStudentIds.length;
+  const teacherName = (id?: string) => teachers.find((t) => t.id === id)?.name || "Sin asignar";
+  const levelColor = (level: string) => level === "Básico" ? "bg-blue-100 text-blue-800" : level === "Intermedio" ? "bg-yellow-100 text-yellow-800" : "bg-purple-100 text-purple-800";
 
   const getLevelColor = (level: string) => {
     switch (level) {
@@ -44,28 +55,39 @@ export default function Courses() {
               Administra los cursos de la academia
             </p>
           </div>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center space-x-2">
-            <Plus className="h-4 w-4" />
-            <span>Nuevo Curso</span>
-          </button>
+          <div />
         </div>
       </div>
 
-      {/* Search and Filters */}
+      {/* Crear curso */}
       <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
-        <div className="flex flex-col sm:flex-row gap-4">
-          <div className="flex-1 relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-            <input
-              type="text"
-              placeholder="Buscar cursos..."
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="space-y-3">
+            <input className="rounded-lg border px-3 py-2 text-sm w-full" placeholder="Nombre" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
+            {errors.name && <span className="text-xs text-red-600">{errors.name}</span>}
+            <label className="text-sm text-gray-700">Nivel</label>
+            <select className="rounded-lg border px-3 py-2 text-sm w-full" value={form.level} onChange={(e) => setForm({ ...form, level: e.target.value as CourseLevel })}>
+              <option value="Básico">Básico</option>
+              <option value="Intermedio">Intermedio</option>
+              <option value="Avanzado">Avanzado</option>
+            </select>
+            <input className="rounded-lg border px-3 py-2 text-sm w-full" placeholder="Duración (meses)" type="number" min={1} value={form.duracionMeses} onChange={(e) => setForm({ ...form, duracionMeses: Number(e.target.value) })} />
           </div>
-          <button className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 flex items-center space-x-2">
-            <Filter className="h-4 w-4" />
-            <span>Filtros</span>
-          </button>
+          <div className="space-y-3">
+            <input className="rounded-lg border px-3 py-2 text-sm w-full" placeholder="Instrumento" list="inst-list" value={form.instrumento} onChange={(e) => setForm({ ...form, instrumento: e.target.value })} />
+            {errors.inst && <span className="text-xs text-red-600">{errors.inst}</span>}
+            <datalist id="inst-list">{instruments.map((i) => (<option key={i.id} value={i.name} />))}</datalist>
+            <input className="rounded-lg border px-3 py-2 text-sm w-full" placeholder="Recursos necesarios (coma)" value={form.recursosNecesarios} onChange={(e) => setForm({ ...form, recursosNecesarios: e.target.value })} />
+            <select className="rounded-lg border px-3 py-2 text-sm w-full" value={form.teacherId} onChange={(e) => setForm({ ...form, teacherId: e.target.value })}>
+              {teachers.map((t) => (<option key={t.id} value={t.id}>{t.name}</option>))}
+            </select>
+          </div>
+          <div className="space-y-3">
+            <input className="rounded-lg border px-3 py-2 text-sm w-full" placeholder="Requisitos (coma)" value={form.requisitos} onChange={(e) => setForm({ ...form, requisitos: e.target.value })} />
+            <input className="rounded-lg border px-3 py-2 text-sm w-full" placeholder="Objetivos (coma)" value={form.objetivos} onChange={(e) => setForm({ ...form, objetivos: e.target.value })} />
+            <input className="rounded-lg border px-3 py-2 text-sm w-full" placeholder="Cupos máximos" type="number" min={1} value={form.maxCapacity} onChange={(e) => setForm({ ...form, maxCapacity: Number(e.target.value) })} />
+            <button onClick={createCourse} className="rounded-md px-4 py-2 text-sm text-white bg-blue-600 w-full">Guardar curso</button>
+          </div>
         </div>
       </div>
 
@@ -107,38 +129,20 @@ export default function Courses() {
                     </div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
-                    <span
-                      className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getLevelColor(
-                        course.level
-                      )}`}
-                    >
-                      {course.level}
-                    </span>
+                    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${levelColor(course.level)}`}>{course.level}</span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                    {course.teacher}
+                    {teacherName(course.teacherId)}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                    {course.enrolledStudents}/{course.maxCapacity}
+                    {enrolledCount(course)}/{course.maxCapacity}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
-                    <span
-                      className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getStatusColor(
-                        course.status
-                      )}`}
-                    >
-                      {course.status}
-                    </span>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Activo</span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                     <div className="flex space-x-2">
-                      <button className="text-blue-600 hover:text-blue-900">
-                        Ver
-                      </button>
-                      <button className="text-indigo-600 hover:text-indigo-900">
-                        Editar
-                      </button>
-                      <button className="text-red-600 hover:text-red-900">
+                      <button className="text-red-600 hover:text-red-900" onClick={() => deleteCourse(course.id)}>
                         Eliminar
                       </button>
                     </div>

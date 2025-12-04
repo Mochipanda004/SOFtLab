@@ -37,15 +37,63 @@ function formatCOP(n: number) {
   }).format(n);
 }
 
+const fallbackByInstrument: Record<string, string> = {
+  Piano: "https://images.pexels.com/photos/164935/pexels-photo-164935.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  Guitarra: "https://images.pexels.com/photos/96380/pexels-photo-96380.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  Violín: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png",
+  Batería: "https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  Teoría: "https://images.pexels.com/photos/164829/pexels-photo-164829.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  Saxofón: "https://cdn.pixabay.com/photo/2014/12/16/22/25/saxophone-571377_1280.jpg",
+  Saxofon: "https://cdn.pixabay.com/photo/2014/12/16/22/25/saxophone-571377_1280.jpg",
+};
+
+const preferredByInstrument: Record<string, string> = {
+  Saxofón: "/images/saxofon.jpg",
+  Saxofon: "/images/saxofon.jpg",
+};
+
+const defaultFallback = "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop";
+
 export default function PublicCourseCard({ c }: { c: Course }) {
   return (
     <article className="rounded-2xl border border-gray-200 bg-white overflow-hidden shadow-sm">
       <div className="relative">
-        <img
-          src={c.imageUrl}
-          alt={c.title}
-          className="h-40 w-full object-cover"
-        />
+        {c.instrument === "Saxofón" || c.instrument === "Saxofon" ? (
+          <div className="h-40 w-full overflow-hidden bg-gray-100">
+            <img
+              src={"/images/saxofon-intermedio.jpg"}
+              alt="Saxofón profesional modelo intermedio sobre fondo neutro"
+              className="h-full w-full object-cover"
+              loading="lazy"
+              decoding="async"
+              width={1200}
+              height={600}
+              sizes="(max-width: 768px) 100vw, 33vw"
+              onError={(e) => {
+                const img = e.currentTarget as HTMLImageElement;
+                const fallback = fallbackByInstrument[c.instrument] || defaultFallback;
+                img.src = fallback;
+              }}
+            />
+          </div>
+        ) : (
+          <img
+            src={preferredByInstrument[c.instrument] || c.imageUrl}
+            alt={c.title}
+            className="h-40 w-full object-cover"
+            onError={(e) => {
+              const img = e.currentTarget as HTMLImageElement;
+              const fbInstrument = fallbackByInstrument[c.instrument] || defaultFallback;
+              const alreadyTried = img.getAttribute('data-fallback') === 'instrument';
+              if (!alreadyTried) {
+                img.setAttribute('data-fallback', 'instrument');
+                img.src = fbInstrument;
+              } else {
+                img.src = defaultFallback;
+              }
+            }}
+          />
+        )}
         <div className="absolute right-3 top-3 flex items-center gap-2">
           <Badge label={c.level} className={levelColor[c.level]} />
           <Badge label={c.modality} className={modalityColor[c.modality]} />

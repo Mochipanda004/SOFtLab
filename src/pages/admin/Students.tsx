@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo, useState } from "react";
 import {
   GraduationCap,
   Plus,
@@ -6,10 +6,19 @@ import {
   DollarSign,
   AlertCircle,
 } from "lucide-react";
-import { mockStudents } from "../../mocks/admin-data";
+import { AdminStore, Student, Course, uid } from "@/lib/adminStore";
 
 export default function Students() {
-  const students = mockStudents;
+  const [students, setStudents] = useState<Student[]>(() => AdminStore.getStudents());
+  const courses = AdminStore.getCourses();
+  const teachers = AdminStore.getTeachers();
+  const [form, setForm] = useState<{ name: string; email: string }>({ name: "", email: "" });
+  const [assign, setAssign] = useState<{ studentId?: string; courseId?: string }>({});
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const saveStudents = (list: Student[]) => { setStudents(list); AdminStore.saveStudents(list); };
+  const saveCourses = (list: Course[]) => AdminStore.saveCourses(list);
+  const createStudent = () => { const e: Record<string, string> = {}; if (!form.name.trim()) e.name = "Nombre requerido"; if (!form.email.trim()) e.email = "Email requerido"; setErrors(e); if (Object.keys(e).length) return; const s: Student = { id: uid("std"), name: form.name.trim(), email: form.email.trim() }; saveStudents([s, ...students]); setForm({ name: "", email: "" }); };
+  const assignCourse = () => { if (!assign.studentId || !assign.courseId) { setErrors({ assign: "Selecciona estudiante y curso" }); return; } const course = courses.find((c) => c.id === assign.courseId)!; if (course.enrolledStudentIds.includes(assign.studentId)) return; const nextC = courses.map((c) => c.id === course.id ? { ...c, enrolledStudentIds: [assign.studentId!, ...c.enrolledStudentIds] } : c); saveCourses(nextC); };
 
   const getPaymentStatusColor = (status: string) => {
     switch (status) {
@@ -35,15 +44,9 @@ export default function Students() {
 
   // KPI Cards
   const totalStudents = students.length;
-  const studentsUpToDate = students.filter(
-    (s) => s.paymentStatus === "Al día"
-  ).length;
-  const studentsPending = students.filter(
-    (s) => s.paymentStatus === "Pendiente"
-  ).length;
-  const averageProgress = Math.round(
-    students.reduce((acc, s) => acc + s.progress, 0) / students.length
-  );
+  const studentsUpToDate = 0;
+  const studentsPending = 0;
+  const averageProgress = 0;
 
   return (
     <div className="space-y-6">
@@ -58,10 +61,7 @@ export default function Students() {
               Administra los estudiantes y su progreso académico
             </p>
           </div>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center space-x-2">
-            <Plus className="h-4 w-4" />
-            <span>Nuevo Estudiante</span>
-          </button>
+          <div />
         </div>
       </div>
 
@@ -130,27 +130,37 @@ export default function Students() {
         </div>
       </div>
 
-      {/* Search */}
+      {/* Registrar y asignar */}
       <div className="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
-        <div className="flex flex-col sm:flex-row gap-4">
-          <div className="flex-1 relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-            <input
-              type="text"
-              placeholder="Buscar estudiantes por nombre o email..."
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="space-y-3">
+            <input className="rounded-lg border px-3 py-2 text-sm w-full" placeholder="Nombre" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
+            <input className="rounded-lg border px-3 py-2 text-sm w-full" placeholder="Email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} />
+            <button onClick={createStudent} className="rounded-md px-4 py-2 text-sm text-white bg-blue-600 w-full">Guardar estudiante</button>
+            {(errors.name || errors.email) && <span className="text-xs text-red-600">Completa nombre y email</span>}
           </div>
-          <select className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-            <option value="">Todos los estados</option>
-            <option value="Al día">Al día</option>
-            <option value="Pendiente">Pendiente</option>
-            <option value="Vencido">Vencido</option>
-          </select>
+          <div className="space-y-3">
+            <select className="rounded-lg border px-3 py-2 text-sm w-full" value={assign.studentId || ""} onChange={(e) => setAssign({ ...assign, studentId: e.target.value || undefined })}>
+              <option value="">Seleccionar estudiante</option>
+              {students.map((s) => (<option key={s.id} value={s.id}>{s.name}</option>))}
+            </select>
+            <select className="rounded-lg border px-3 py-2 text-sm w-full" value={assign.courseId || ""} onChange={(e) => setAssign({ ...assign, courseId: e.target.value || undefined })}>
+              <option value="">Seleccionar curso</option>
+              {courses.map((c) => (<option key={c.id} value={c.id}>{c.name} • {c.level}</option>))}
+            </select>
+            <button onClick={assignCourse} className="rounded-md px-4 py-2 text-sm text-white bg-blue-600 w-full">Asignar a curso</button>
+            {errors.assign && <span className="text-xs text-red-600">{errors.assign}</span>}
+          </div>
+          <div className="space-y-3">
+            <select className="rounded-lg border px-3 py-2 text-sm w-full">
+              {teachers.map((t) => (<option key={t.id} value={t.id}>{t.name}</option>))}
+            </select>
+            <div className="text-xs text-gray-600">La asignación de profesor se gestiona desde Cursos seleccionando “Profesor”.</div>
+          </div>
         </div>
       </div>
 
-      {/* Students Table */}
+      {/* Estudiantes */}
       <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
         <div className="overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200">
@@ -196,38 +206,22 @@ export default function Students() {
                   </td>
                   <td className="px-6 py-4">
                     <div className="text-sm text-gray-900">
-                      {student.enrolledCourses.join(", ")}
+                      {courses.filter((c) => c.enrolledStudentIds.includes(student.id)).map((c) => c.name).join(", ") || "Sin cursos"}
                     </div>
                   </td>
                   <td className="px-6 py-4">
-                    <div className="space-y-2">
-                      <div className="flex items-center justify-between">
-                        <span className="text-sm font-medium text-gray-900">
-                          {student.progress}%
-                        </span>
-                      </div>
-                      <ProgressBar progress={student.progress} />
-                    </div>
+                    <div className="space-y-2"><div className="flex items-center justify-between"><span className="text-sm font-medium text-gray-900">0%</span></div><ProgressBar progress={0} /></div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
-                    <span
-                      className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getPaymentStatusColor(
-                        student.paymentStatus
-                      )}`}
-                    >
-                      {student.paymentStatus}
-                    </span>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">N/A</span>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                    {student.enrollmentDate}
+                    —
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                     <div className="flex space-x-2">
-                      <button className="text-blue-600 hover:text-blue-900">
-                        Ver
-                      </button>
-                      <button className="text-indigo-600 hover:text-indigo-900">
-                        Editar
+                      <button className="text-red-600 hover:text-red-900" onClick={() => { if (!window.confirm("¿Eliminar estudiante?")) return; saveStudents(students.filter((s) => s.id !== student.id)); }}>
+                        Eliminar
                       </button>
                     </div>
                   </td>

@@ -46,6 +46,7 @@ export default function TeacherLayout({ children }: { children: React.ReactNode 
     { label: "Materiales", href: "/profesor/materiales" },
     { label: "Evaluaciones", href: "/profesor/evaluaciones" },
     { label: "Calificaciones", href: "/profesor/calificaciones" },
+    { label: "Tareas", href: "/profesor/tareas" },
   ];
 
   return (

@@ -35,7 +35,7 @@ export const featuredCourses: Course[] = [
     capacity: 5,
     available: true,
     imageUrl:
-      "https://images.unsplash.com/photo-1511376777868-611b54f68947?q=80&w=1200&auto=format&fit=crop",
+      "https://images.pexels.com/photos/164935/pexels-photo-164935.jpeg?auto=compress&cs=tinysrgb&w=1200",
     tags: ["Nuevo", "Popular"],
     maxCapacity: 12,
     durationMonths: 3,
@@ -78,7 +78,7 @@ export const featuredCourses: Course[] = [
     capacity: 3,
     available: true,
     imageUrl:
-      "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.pexels.com/photos/167636/pexels-photo-167636.jpeg?auto=compress&cs=tinysrgb&w=1200",
     tags: ["Popular"],
     maxCapacity: 10,
     durationMonths: 4,
@@ -125,7 +125,7 @@ export const featuredCourses: Course[] = [
     capacity: 0,
     available: false,
     imageUrl:
-      "https://images.unsplash.com/photo-1485579149621-3123dd979885?q=80&w=1200&auto=format&fit=crop",
+      "https://images.pexels.com/photos/210823/pexels-photo-210823.jpeg?auto=compress&cs=tinysrgb&w=1200",
     tags: ["Popular"],
     maxCapacity: 12,
     durationMonths: 6,
@@ -173,7 +173,7 @@ export const featuredCourses: Course[] = [
     capacity: 8,
     available: true,
     imageUrl:
-      "https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1200&auto=format&fit=crop",
+      "https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&w=1200",
     tags: ["Nuevo"],
     maxCapacity: 10,
     durationMonths: 3,
@@ -220,7 +220,7 @@ export const featuredCourses: Course[] = [
     capacity: 15,
     available: true,
     imageUrl:
-      "https://images.unsplash.com/photo-1520135017665-269e837b0c77?q=80&w=1200&auto=format&fit=crop",
+      "https://images.pexels.com/photos/164829/pexels-photo-164829.jpeg?auto=compress&cs=tinysrgb&w=1200",
     maxCapacity: 20,
     durationMonths: 2,
     certificationIncluded: true,
@@ -267,7 +267,7 @@ export const featuredCourses: Course[] = [
     capacity: 4,
     available: true,
     imageUrl:
-      "https://images.unsplash.com/photo-1517495306984-6812f4e926d7?q=80&w=1200&auto=format&fit=crop",
+      "https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?auto=compress&cs=tinysrgb&w=1200",
     maxCapacity: 8,
     durationMonths: 4,
     certificationIncluded: true,

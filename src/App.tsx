@@ -12,6 +12,7 @@ import Students from "@/pages/admin/Students";
 import Resources from "@/pages/admin/Resources";
 import Reports from "@/pages/admin/Reports";
 import Settings from "@/pages/admin/Settings";
+import AdminSchedule from "@/pages/admin/Schedule";
 import StudentLayout from "@/pages/student/StudentLayout";
 import StudentDashboard from "@/pages/student/Dashboard";
 import Resumen from "@/pages/student/Resumen";
@@ -27,6 +28,7 @@ import TeacherAsistencia from "@/pages/teacher/Asistencia";
 import TeacherMateriales from "@/pages/teacher/Materiales";
 import TeacherEvaluaciones from "@/pages/teacher/Evaluaciones";
 import TeacherCalificaciones from "@/pages/teacher/Calificaciones";
+import TeacherTareas from "@/pages/teacher/Tareas";
 import UpdatePasswordPage from "@/pages/UpdatePassword";
 
 export default function App() {
@@ -52,6 +54,7 @@ export default function App() {
                 <Route path="resources" element={<Resources />} />
                 <Route path="reports" element={<Reports />} />
                 <Route path="settings" element={<Settings />} />
+                <Route path="schedule" element={<AdminSchedule />} />
               </Routes>
             </AdminLayout>
           }
@@ -85,6 +88,7 @@ export default function App() {
                 <Route path="materiales" element={<TeacherMateriales />} />
                 <Route path="evaluaciones" element={<TeacherEvaluaciones />} />
                 <Route path="calificaciones" element={<TeacherCalificaciones />} />
+                <Route path="tareas" element={<TeacherTareas />} />
               </Routes>
             </TeacherLayout>
           }

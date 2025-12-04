@@ -1,5 +1,6 @@
 import PublicNavbar from "@/components/PublicNavbar";
 import PublicFooter from "@/components/PublicFooter";
+import ChatbotWidget from "@/components/ChatbotWidget";
 import { HOME_DATA } from "@/mocks/home-data";
 import PublicCourseCard from "@/components/PublicCourseCard";
 import { featuredCourses } from "@/mock/courses";
@@ -23,9 +24,7 @@ export default function Home() {
             Desliza hacia abajo
             <div className="text-blue-600">⌄</div>
           </div>
-          <div className="absolute right-6 bottom-6 flex items-center gap-3">
-            <span className="rounded-full bg-gray-800 text-white text-sm px-4 py-2 opacity-60">¿Tienes dudas?</span>
-          </div>
+          <div className="absolute right-6 bottom-6"></div>
         </div>
       </section>
 
@@ -49,6 +48,7 @@ export default function Home() {
       </div>
 
       <PublicFooter />
+      <ChatbotWidget />
     </div>
   );
 }
